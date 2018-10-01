@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -90,26 +91,34 @@
                                         <rect key="frame" x="0.0" y="170" width="375" height="580"/>
                                         <color key="backgroundColor" red="0.0" green="0.37254901959999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="580" id="LVe-HD-noO"/>
+                                            <constraint firstAttribute="height" constant="580" id="LVe-HD-noO">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="900"/>
+                                            </constraint>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0RX-ZF-b2q">
                                         <rect key="frame" x="20" y="130" width="335" height="635"/>
                                         <color key="backgroundColor" red="0.46666666670000001" green="0.70588235290000001" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="635" id="HXa-xA-1ij"/>
+                                            <constraint firstAttribute="height" constant="635" id="HXa-xA-1ij">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="900"/>
+                                            </constraint>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="0RX-ZF-b2q" firstAttribute="centerX" secondItem="8l8-tr-M5D" secondAttribute="centerX" id="3T9-0n-tr5"/>
-                                    <constraint firstItem="hlZ-97-wEt" firstAttribute="top" secondItem="8l8-tr-M5D" secondAttribute="top" constant="170" id="Icx-Ph-dAQ"/>
+                                    <constraint firstItem="hlZ-97-wEt" firstAttribute="top" secondItem="8l8-tr-M5D" secondAttribute="top" constant="170" id="Icx-Ph-dAQ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
                                     <constraint firstItem="hlZ-97-wEt" firstAttribute="leading" secondItem="8l8-tr-M5D" secondAttribute="leading" id="LGa-hB-MG5"/>
                                     <constraint firstAttribute="trailing" secondItem="0RX-ZF-b2q" secondAttribute="trailing" constant="20" id="QtS-Kh-o5g"/>
                                     <constraint firstAttribute="trailing" secondItem="hlZ-97-wEt" secondAttribute="trailing" id="Udu-Z4-EXl"/>
                                     <constraint firstAttribute="bottom" secondItem="hlZ-97-wEt" secondAttribute="bottom" id="WUx-kK-plk"/>
                                     <constraint firstItem="0RX-ZF-b2q" firstAttribute="leading" secondItem="8l8-tr-M5D" secondAttribute="leading" constant="20" id="sXG-yU-F5j"/>
-                                    <constraint firstItem="0RX-ZF-b2q" firstAttribute="top" secondItem="8l8-tr-M5D" secondAttribute="top" constant="130" id="wtg-F8-uov"/>
+                                    <constraint firstItem="0RX-ZF-b2q" firstAttribute="top" secondItem="8l8-tr-M5D" secondAttribute="top" constant="130" id="wtg-F8-uov">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="270"/>
+                                    </constraint>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0S-Q3-j1G">
@@ -133,6 +142,7 @@
                             <constraint firstAttribute="bottom" secondItem="J0S-Q3-j1G" secondAttribute="bottom" id="lya-Fe-UoS"/>
                             <constraint firstAttribute="trailing" secondItem="J0S-Q3-j1G" secondAttribute="trailing" constant="20" id="uXQ-HC-TCc"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pqn-WT-Frd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
