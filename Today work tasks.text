@@ -178,5 +178,8 @@ Issues: Review ScrolView, TableView, ColectionView
 < Today work tasks>
 1.	 Show image, label file JSON in UITableView (65%)
 2.   Custom TableView in ScrollView
+< Next Plan >
+1.	 Refactor code
+2.   Fix can not scroll collection iamges scrollview
 
 Issues: Review ScrolView, TableView, ColectionView
