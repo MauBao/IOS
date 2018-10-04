@@ -1,0 +1,320 @@
+1. What information is appropriate to post on social networks?
+Select one:
+a. Email addresses of co-workers
+b. Personal vacation schedule
+c. Neither are OK to post @
+d. Both are OK to post
+
+2.If you set your anti-virus software to auto-update then you don't need Windows Automatic Updates
+Select one:
+a. True
+b. False @
+
+3.What are the most important things you can do to secure desktop PCs?
+Select one or more:
+a. Turn on Automatic Updates
+b. Remove the hard drive
+c. a and b @
+d. a and c
+e. Install anti-virus software
+
+4.What is Classification of Confidentiality: TMA Critically Confidential?
+Select one:
+a. The information that is intended for being known by TMA employees, TMA customers, partners and the public
+b. The information that is not intended for being known by every TMA employees or by the public
+c. The information requires stricter protection than TMA Confidential @
+
+5.Choose the information Security practices everyone should follow in their work areas.
+Select one or more:
+a. Lock the computer screen and keyboard when stepping away from the desk
+b. Escort visitors to departments; do not let them wander around
+c. Lock documents containing confidential Information securely in drawers, cabinets, or comparable storage locations
+d. Do not leave printed confidential documents at printers, in fax machines, or any other open, unsecured area
+e. All of the above @
+
+6.It is safe, and more expedient, to conduct business via Instant Messaging
+Select one:
+a. True
+b. False @
+
+7.Your password should be changed:
+Select one:
+a. Daily
+b. Never
+c. Infrequently
+d. Regularly @
+
+8.Removable media covered byTMA is security policies and procedures, include
+Select one:
+a. Flash drives, memory sticks
+b. All of the above @
+c. Tapes
+d. CDs/DVDs
+
+9. You should never respond to SPAM.
+Select one:
+a. False
+b. True @
+
+10.You are using e-mail to send and receive private information (e.g. medical data, salary information, passwords). What do you do?
+Select one:
+a. Put the information in many small messages so that only a small information will be exposed if it falls into the wrong hands.
+b. Encrypt the information before sending it through e-mail @
+c. Put all of the information in one large message before sending it to reduce the chance that it will fall into the wrong hands 	
+
+11. Which of the following is NOT the primary issue covered by information security?
+
+Select one:
+a. Availability – information can be accessed when needed
+b. Integration – making sure systems communicate @
+c. Integrity – making sure information aren’t changed without authorization
+d. Confidentiality - protected information is kept private
+
+12. It is OK to put your e-mail address on a Web site.
+Select one:
+a. False @
+b. True
+
+13. Itis safe to use unsecured wireless network to access your work email
+Select one:
+a. True
+b. False @
+
+14. Which of the following is the most important to install and keep up to date on your personal computer?
+Select one:
+a. Operating system updates
+b. Anti-virus and anti-spyware software
+c. All of the above must be installed and kept up to date @
+d. A Firewall
+
+15. How do you ensure that the sensitive/configdential information in a paper form is disposed of in a secure manner?
+Select one:
+a. Do nothing. It is hard to make copies of the papers.
+b. You dump the papers into your garbage bin.
+c. You shred the papers by using a paper shredder or put the papers in an approved locked shredding bin. @
+d. Request the office staff to take care of the disposal process.
+
+16.Practices contributing to secure laptop usage include:
+Select one:
+a. Keeping the laptop close while traveling
+b. Ensure the OS up-to-date
+c. All of the above @
+d. Encrypt the hard drive
+
+17.Which of the following file types should never be opened?
+Select one:
+a. .VBS - VBScript Script File
+b. .BAT - Batch Processing
+c. .EXE - Executable File
+d. All of the above @
+
+18.What is your best defense against virus infection?
+Select one:
+a. Don't download files from the Internet
+b. Don't open e-mail attachments you're not expecting @
+c. Don't surf the Internet
+d. Don't use disks to transfer data
+
+19. What is Classification of Confidentiality: TMA Confidential?
+Select one:
+a. The information requires stricter protection than TMA Confidential
+b. The information that is not intended for being known by every TMA employees or by the public  @
+c. The information that is intended for being known by TMA employees, TMA customers, partners and the public
+
+20.What do you do to secure your computer before leaving for lunch?
+Select one:
+a. Ask co-worker to keep eye on your computer.
+b. Lock the monitor and lock the papers in your cabinet @
+c. Be efficient and start the print job and collect it from the printer when you come back.
+d. Do nothing. The screen saver will kick on in 15 minutes.
+
+21."Physical medias or papers (e.g., hard disks, CDs, Tapes, etc) must be permanently destroyed to avoid any leak before being thrown into special disposal bins. For example: shred papers by shredders, break CDs into pieces, cut tapes, etc " is applied to
+
+Select one:
+a. TMA Critically Confidential, TMA Confidential @
+b. TMA Public, TMA Confidential
+c. TMA Critically Confidential, TMA Public
+
+22. Choose the information Security practices everyone should follow in their work areas.
+Select one or more:
+a. All of the above @
+b. Do not leave printed confidential documents at printers, in fax machines, or any other open, unsecured area
+c. Lock documents containing confidential Information securely in drawers, cabinets, or comparable storage locations
+d. Escort visitors to departments; do not let them wander around
+e. Lock the computer screen and keyboard when stepping away from the desk
+
+23.What is "phishing?"
+Select one:
+a. None of the above
+b. "Spoofed" e-mails and fraudulent websites designed to fool recipients into divulging personal financial data such as credit card numbers, account usernames and passwords @
+c. An example of a strong password
+d. A type of computer virus
+
+24.Why is it important to make backups of Data?
+Select one:
+a. To allow the business to continue to operate
+b. To ensure information you need is available when you need it
+c. To have copies of valuable data that may be lost, stolen, or erased
+d. All of the above @
+
+25. It is not safe to e-mail business documents to your home computer to work on them.
+Select one:
+a. False
+b. True @
+
+26. Which of the following should you NOT do in order to protect your password.
+Select one:
+a. E-mail yur password to an associate.
+b. Provide your assistant with your password.
+c. All of the above. @
+d. Say your password aloud.
+
+27.Which of the following would be the best password?
+Select one:
+a. BobJones
+b. M4krHCP&B @
+c. AbcdEFgh
+d. 12345678@X
+
+28.This is a document that states in writing how a company plans to protect the companyis physical and IT assets.
+Select one:
+a. Access control list
+b. Data Encryption Standard
+c. Security policy @
+d. Public key certificate
+
+29.The best way to avoid viruses is to not open unexpected e-mail attachments from unknown sources
+Select one:
+a. False
+b. True @
+
+30.The training room is used to conduct a meeting to discuss sensitive business issues. Which step need to be taken upon the completion of the meeting?
+Select one:
+a. Erase all the information on the whiteboard, place the documents in the recycle bin and lock the door upon exiting
+b. Erase all the information on the whiteboard, dispose unused documents using a shredder and lock the door upon exiting @
+c. Ensure the room is looked upon exiting
+
+31.Which of the following message attachments would you be wise not to open? A message with an attachment that:
+Select one:
+a. Is an unexpected note from a friend
+b. Says itis a sample copy of a new game from a recognized company e-mail address
+c. All of the above @
+d. Appears more than once in your Inbox
+
+32.Which of the following is NOT a security bad practice that non-compliance with security policies?
+Select one:
+a. Letting others know your password
+b. Calling the IT Support to report a theft of a PC @
+c. Leaving your computer logged on and unattended
+d. Downloading unauthorized software
+
+33.Bandwidth is not affected by downloading files from the Internet to your PC.
+Select one:
+a. True
+b. False @
+
+34. Holding the door for someone is courtesy and is expected in a secure work environment
+Select one:
+a. True
+b. False @
+
+35.What is Classification of Confidentiality: TMA Public?
+Select one:
+a. The information requires stricter protection than TMA Confidential
+b. The information that is intended for being known by TMA employees, TMA customers, partners and the public @
+c. The information that is not intended for being known by every TMA employees or by the public
+
+36.If you're not careful about your Internet browsing, which of the following can be the result?
+
+Select one:
+a. Spyware
+b. Viruses
+c. Hacking
+d. All of the above. @
+
+37.Which of the following things is allowed in email policy?
+
+Select one:
+a. Send a fake email
+b. Send confidential or company internal information to outside without authorization
+c. Transmit any content that is offensive, harassing, or fraudulent
+d. None of the above @
+
+38.When you work outside your office on your laptop, what can you do to secure your laptop?
+Select one:
+a. Use a locking cable to secure the laptop to furniture. @
+b. Do not worry; your IT department will replace your laptop if it get stolen.
+c. Leave the laptop unattended in a public place.
+d. Do not lock your laptop screen when you leave for lunch, the screensaver will kick on automatically
+
+39.Which of the following is a good way to create a password?
+Select one:
+a. Letter or number sequences.
+b. Substituting numbers of letters, such as 3 for E.
+c. A combination of upper and lowercase letters mixed with numbers and symbols. @
+d. Your childrenis or petis names
+
+40.Where should you write down your passwords.
+a. Someplace easily seen from your computer.
+b. You should never write down your password.@
+c. Someplace that is out of sight, like beneath your keyboard or in a nearby drawer.
+d. Wherever you really need it for your memory, but this information can only be kept in a secure location.
+
+41.Which two strategies will help protect hardcopy information? (Choose two.) 
+a. Shred printouts before disposal @
+b. Adopt a "clean desk" policy @
+c. Encrypt all files
+d. Sign all documents
+
+42.You see an employee taking photos in the server room. What do you do?
+a. No issues, join them 
+b. Ask them not to take photos in secure areas like server rooms, labs etc. and raise a security incident. @
+
+43.Using free proxy, tools(Ultrasurf) to bypass TMA firewall is prohibited
+a. True @
+b. False
+
+44.Why is backing up data files important?
+a. The business continues to operate
+b. Backups ensure that the information you need is there when you need it 
+c. If the information is damaged it can be recovered
+d. All of the above @
+
+45.After receiving an email from an unknown contact that has an attachment, you should 
+a. Do nothing and keep it in the in-box
+b. Forward the attachment to your colleagues and friends 
+c. Open the attachment
+d. Delete the mail without opening it @
+
+46.Regarding confidentiality, how many classifications TMA information is categorized into?
+a. 3 @
+b. 5
+c. 2
+d. 4
+
+47.What would you do if you encountered a security incident:
+a. Tell a co-worker
+b. All of the above
+c. Call the project manager
+d. Contact IT security team(Email: security@tma.com.vn) @
+
+48.You see a suspicious person inside the building or work area, who looks "out of place", so you should contact supervisor or security for assistance
+a. False
+b. True @
+
+49.Who is responsible for information security in your Project/department? 
+a. Local IT support staff 
+b. Project Manager
+c. All of the above
+d. Everyone, including myself @
+
+50.Does the security have the right to ask you to display your ID badges and check your bags? 
+a. Yes @ C
+b. No
+
+51. Why is it important to have a good understanding of Information Security policies and procedures?
+Helps to understand levels of responsibility 
+52. What is the most common delivery method for viruses?
+Email
+
+
