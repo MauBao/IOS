@@ -13,7 +13,7 @@ import RxCocoa
 class ViewController: UIViewController, UITableViewDataSource {
     
     var shownCities = [String]() // Data source for UITableView
-    let allCities = ["Oklahoma", "Chicago", "Moscow", "Danang", "Vancouver", "Praga"] // Mocked API data source
+    let allCities = ["Oklahoma", "Chicago", "Moscow", "Danang", "Vancouver", "Praga", "Angula", "Boom", "Dad", "Qwerty"] // Mocked API data source
     let disposeBag = DisposeBag()
     
     @IBOutlet weak var tableView: UITableView!
