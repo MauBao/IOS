@@ -26,10 +26,12 @@ class ViewController: UIViewController, UITableViewDataSource {
         //  theo dõi thuộc tính rx.text của UISearchBar
          searchBar.rx.text // Observable property
          .orEmpty // Make it non-optional
-         .subscribe(onNext: { [unowned self] query in // Here we will be notified of every new value
-         self.shownCities = self.allCities.filter { $0.hasPrefix(query) } // We now do our "API Request" to find cities
-         self.tableView.reloadData() // And reload table view data
-         })
+            .debounce(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
+            .distinctUntilChanged() // If they didn't occur, check if the new value is the same as old.
+            .subscribe(onNext: { [unowned self] query in // Here we subscribe to every new value
+                self.shownCities = self.allCities.filter { $0.hasPrefix(query) } // We now do our "API Request" to find cities.
+                self.tableView.reloadData() // And reload table view data.
+            })
             .disposed(by: disposeBag)
     }
 
