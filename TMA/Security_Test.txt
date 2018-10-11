@@ -317,4 +317,48 @@ Helps to understand levels of responsibility
 52. What is the most common delivery method for viruses?
 Email
 
+52. In case need help/support from IT/security, which number you will to call?
 
+a. 114
+b. 5555 @
+c. 115
+d. 113
+
+53. Providing information about, or lists of TMA employees to parties outside TMA is prohibited 
+
+a. True @
+b. False
+
+54. What will you do in case of lost/stolen your device/equipment(Mobile phone, RAM, CPU,...) in TMA premises?
+
+a. Immediately report to your Manager @
+b. Immediately report to TMA Security team @
+c. Talk to your friends
+
+55. If you're not careful about your Internet browsing, which of the following can result?
+
+a. Browser Hijacking
+b. Spyware or Adware installation
+c. Information or identity theft
+d. All the above @
+
+56. What are your responsibilities for the protection of company assets?
+
+a. Know the processes to protect information assets
+b. Build proper security practices into your day
+c. Assist with the protection and proper use of information assets
+d. All of the above @
+
+57. Which one of the following would be classified as sensitive personal data?
+
+a. All of the above @
+b. Address/Email Address
+c. Driver's License Number
+d. Passport Number/ National ID
+e. Date of Birth
+
+58. How to prevent Browsers Store Your Passwords or auto-login, What should you do?
+
+a. Never use the saved password feature on a public computer(PCs/Laptops in meeting, testing PC, cafés, airports, hotels and libraries)
+b. Both of them are correct @
+c. Signing out of a website before closing the browser
