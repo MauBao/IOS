@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DisplayTableViewController.tableView(_:editActionsForRowAt:):DisplayTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.detailTextLabel?.text">
+            </PersistentString>
+            <PersistentString
+               value = "timeStamp">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DisplayTableViewController.viewDidLoad():DisplayTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DisplayTableViewController.tableView(_:cellForRowAt:):DisplayTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell?.lblNameNotes.text">
+            </PersistentString>
+            <PersistentString
+               value = "cell?.lblDescriptionNote.text">
+            </PersistentString>
+            <PersistentString
+               value = "timeStamp">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
