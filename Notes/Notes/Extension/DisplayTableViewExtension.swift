@@ -22,9 +22,9 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         let date = filteredData.reversed()[indexPath.row].date
         let time = filteredData.reversed()[indexPath.row].time
         
-        cell?.lblNotes.text = filteredData.reversed()[indexPath.row].nameDescristion
-        cell?.lblNameNote.text = filteredData.reversed()[indexPath.row].name
-        cell?.lblMoneyNote.text = filteredData.reversed()[indexPath.row].money
+        cell?.lblNotes.text = "Note: " + filteredData.reversed()[indexPath.row].nameDescristion!
+        cell?.lblNameNote.text = "Name: " +  filteredData.reversed()[indexPath.row].name!
+        cell?.lblMoneyNote.text = "Money: " + filteredData.reversed()[indexPath.row].money!
         if let date = date, let time = time {
             let timeStamp = "Added on \(date) at \(time)"
             cell?.lblDateCreateNote.text = timeStamp
@@ -56,8 +56,10 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         
         let share = UITableViewRowAction(style: .default, title: "Share") { (action, indexPath) in
             // share item at indexPath
-            let text = "\(self.filteredData[indexPath.row].nameDescristion ?? "") and \(self.filteredData[indexPath.row].name ?? "") "
-            let textShare = [ text ]
+            let name = "\(self.filteredData[indexPath.row].name ?? "") "
+            let nameDescristion = "\(self.filteredData[indexPath.row].nameDescristion ?? "") "
+            let money = "\(self.filteredData[indexPath.row].money ?? "") "
+            let textShare = [name, money, nameDescristion]
             let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
             self.present(activityViewController, animated: true, completion: nil)
