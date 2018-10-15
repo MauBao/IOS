@@ -8,6 +8,10 @@
 
 import UIKit
 
-class Constants: NSObject {
+class Constants {
+
+    // ShowAlert
+    static let titleShowAlertMessage = "Message"
+    static let buttonShowAlertOK = "OK"
 
 }

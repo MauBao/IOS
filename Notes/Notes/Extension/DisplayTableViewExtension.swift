@@ -56,9 +56,14 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         
         let share = UITableViewRowAction(style: .default, title: "Share") { (action, indexPath) in
             // share item at indexPath
-            print("Share")
+            let text = "\(self.filteredData[indexPath.row].nameDescristion ?? "") and \(self.filteredData[indexPath.row].name ?? "") "
+            let textShare = [ text ]
+            let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
             
         }
+        
         delete.backgroundColor = UIColor(red: 0/255, green: 177/255, blue: 106/255, alpha: 1.0)
         share.backgroundColor = UIColor(red: 54/255, green: 215/255, blue: 183/255, alpha: 1.0)
         
