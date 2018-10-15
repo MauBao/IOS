@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EB94C6B7A87C6610EAE2205 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95E0F6F1080A2C81F989187 /* Pods_Notes.framework */; };
+		681D41F421744E4B0093C880 /* UpdateItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D41F321744E4B0093C880 /* UpdateItemViewController.swift */; };
 		68509BA6217087CC00953684 /* CustomNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68509BA4217087CC00953684 /* CustomNoteTableViewCell.swift */; };
 		68509BA7217087CC00953684 /* CustomNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68509BA5217087CC00953684 /* CustomNoteTableViewCell.xib */; };
 		68A6B4EC217047EE00CE1EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		387DA7D565FC9A79A900C581 /* Pods-NotesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotesUITests/Pods-NotesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D84BE21E2E6EA887B1B0309 /* Pods_NotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DCEB4DD053BE6972542D52 /* Pods_NotesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		681D41F321744E4B0093C880 /* UpdateItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateItemViewController.swift; sourceTree = "<group>"; };
 		68509BA4217087CC00953684 /* CustomNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNoteTableViewCell.swift; sourceTree = "<group>"; };
 		68509BA5217087CC00953684 /* CustomNoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNoteTableViewCell.xib; sourceTree = "<group>"; };
 		68A6B4E8217047EE00CE1EC2 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				68A6B5222170521800CE1EC2 /* DisplayTableViewController.swift */,
 				68509BA4217087CC00953684 /* CustomNoteTableViewCell.swift */,
 				68509BA5217087CC00953684 /* CustomNoteTableViewCell.xib */,
+				681D41F321744E4B0093C880 /* UpdateItemViewController.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				68A6B51D2170488000CE1EC2 /* NotesViewController.swift in Sources */,
 				68509BA6217087CC00953684 /* CustomNoteTableViewCell.swift in Sources */,
 				68A6B4F4217047EF00CE1EC2 /* Notes.xcdatamodeld in Sources */,
+				681D41F421744E4B0093C880 /* UpdateItemViewController.swift in Sources */,
 				68A6B4EC217047EE00CE1EC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
