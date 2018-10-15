@@ -30,7 +30,7 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
         tableView.register(UINib.init(nibName: "CustomNoteTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomNoteTableViewCell")
         createSearchBar()
         //an bphim
-        hideKeyboardWhenTappedAround()
+        hideKeyboardWhenTapped()
     }
     
     override func viewWillAppear(_ animated: Bool) {

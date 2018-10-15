@@ -10,21 +10,6 @@ import UIKit
 
 extension DisplayTableViewController {
     
-    // MARK: Hide keyboard
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DisplayTableViewController.dismissKeyboard(_:)))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
-        view.endEditing(true)
-        
-        if let nav = self.navigationController {
-            nav.view.endEditing(true)
-        }
-    }
-    
     // MARK: CreateSearchBar()
     func createSearchBar() {
         
