@@ -11,6 +11,8 @@ import UIKit
 class NotesViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet var itemEntryTextView: UITextView?
+    @IBOutlet weak var itemEntryMoney: UITextField!
+    @IBOutlet weak var itemEntryName: UITextField!
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -38,10 +40,18 @@ class NotesViewController: UIViewController, UITextViewDelegate {
             guard let entryText = itemEntryTextView?.text else {
                 return
             }
+            guard let entryMoney = itemEntryMoney?.text else {
+                return
+            }
+            guard let entryName = itemEntryName?.text else {
+                return
+            }
             
             let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             let newEntry = Item(context: context)
-            newEntry.name = entryText
+            newEntry.nameDescristion = entryText
+            newEntry.name = entryName
+            newEntry.money = entryMoney
             newEntry.date = currentDate
             newEntry.time = currentTime
             
