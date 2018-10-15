@@ -28,15 +28,8 @@ extension DisplayTableViewController {
             filteredData = items
         } else {
             filteredData = items.filter {
-                ($0.name?.lowercased().contains(searchText.lowercased()))!
-            }
-        }
-        //search name Description
-        if searchText.isEmpty {
-            filteredData = items
-        } else {
-            filteredData = items.filter {
-                ($0.nameDescristion?.lowercased().contains(searchText.lowercased()))!
+                ($0.name?.lowercased().contains(searchText.lowercased()))! ||
+                ($0.nameDescristion?.lowercased().contains(searchText.lowercased()))! || ($0.money?.lowercased().contains(searchText.lowercased()))!
             }
         }
         DispatchQueue.main.async {
