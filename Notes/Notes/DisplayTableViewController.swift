@@ -69,10 +69,10 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         let date = items.reversed()[indexPath.row].date
         let time = items.reversed()[indexPath.row].time
         
-        cell?.lblNameNotes.text = items.reversed()[indexPath.row].name
+        cell?.lblNotes.text = items.reversed()[indexPath.row].name
         if let date = date, let time = time {
             let timeStamp = "Added on \(date) at \(time)"
-            cell?.lblDescriptionNote.text = timeStamp
+            cell?.lblDateCreateNote.text = timeStamp
         }
         
         return cell!

@@ -16,12 +16,11 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func saveItem(_ sender: Any) {
-        guard let enteredText = itemEntryTextView?.text else {
-            return
-        }
-        if enteredText.isEmpty || itemEntryTextView?.text == "Type anything..." {
+        if (itemEntryTextView?.text.isEmpty)! || itemEntryTextView?.text == "Type anything..."{
+         
             let alert = UIAlertController(title: "Please Type Something", message: "Your entry was left blank.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .default) { action in
+                
             })
             
             self.present(alert, animated: true, completion: nil)
@@ -55,13 +54,19 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         itemEntryTextView?.delegate = self
-      
+        itemEntryTextView?.textColor = .black
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.text = ""
+        textView.textColor = UIColor.black
+    }
+
     // an bphim khi nhan return
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if (text == "\n") {

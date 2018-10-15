@@ -16,8 +16,10 @@ class CustomNoteTableViewCell: UITableViewCell {
 
     var delegate: NoteCellProtocol?
     
-    @IBOutlet weak var lblNameNotes: UILabel!
-    @IBOutlet weak var lblDescriptionNote: UILabel!
+    @IBOutlet weak var lblNameNote: UILabel!
+    @IBOutlet weak var lblMoneyNote: UILabel!
+    @IBOutlet weak var lblNotes: UILabel!
+    @IBOutlet weak var lblDateCreateNote: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
