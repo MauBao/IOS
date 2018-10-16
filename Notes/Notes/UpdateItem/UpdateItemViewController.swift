@@ -11,12 +11,21 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var item: Item!
+    var updateViewController: UpdateItemViewController?
     
     @IBOutlet weak var itemEntryNameDescUpdate: UITextField!
     @IBOutlet weak var itemEntryMoneyUpdate: UITextField!
     @IBOutlet weak var itemEntryTextNameUpdate: UITextField!
     @IBAction func updateAction(_ sender: Any) {
         
+        guard let newEntry = itemEntryTextNameUpdate.text else  {
+            return
+        }
+        
+        item.name = newEntry
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+    self.updateViewController?.navigationController?.popViewController(animated: true)
+//        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

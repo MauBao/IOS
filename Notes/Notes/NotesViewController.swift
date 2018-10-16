@@ -63,7 +63,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+      self.title = "New Notes"
         // hide keyboard textFiled
         self.hideKeyboardWhenTapped()
     }
