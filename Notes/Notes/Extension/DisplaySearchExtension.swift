@@ -10,6 +10,21 @@ import UIKit
 
 extension DisplayTableViewController {
     
+    // MARK: Hide keyboard
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DisplayTableViewController.dismissKeyboard(_:)))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+        
+        if let nav = self.navigationController {
+            nav.view.endEditing(true)
+        }
+    }
+    
     // MARK: CreateSearchBar()
     func createSearchBar() {
         
@@ -29,7 +44,7 @@ extension DisplayTableViewController {
         } else {
             filteredData = items.filter {
                 ($0.name?.lowercased().contains(searchText.lowercased()))! ||
-                ($0.nameDescristion?.lowercased().contains(searchText.lowercased()))! || ($0.money?.lowercased().contains(searchText.lowercased()))!
+                    ($0.nameDescristion?.lowercased().contains(searchText.lowercased()))! || ($0.money?.lowercased().contains(searchText.lowercased()))!
             }
         }
         DispatchQueue.main.async {

@@ -10,7 +10,7 @@ import UIKit
 
 class NotesViewController: UIViewController, UITextViewDelegate {
 
-    @IBOutlet var itemEntryTextView: UITextView?
+    @IBOutlet var itemEntryTextView: UITextField!
     @IBOutlet weak var itemEntryMoney: UITextField!
     @IBOutlet weak var itemEntryName: UITextField!
     
@@ -18,7 +18,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func saveItem(_ sender: Any) {
-        if ((itemEntryTextView?.text.isEmpty)! || (itemEntryMoney?.text!.isEmpty)! || (itemEntryName?.text!.isEmpty)!) || itemEntryTextView?.text == "Type anything..."{
+        if ((itemEntryTextView?.text!.isEmpty)! || (itemEntryMoney?.text!.isEmpty)! || (itemEntryName?.text!.isEmpty)!) || itemEntryTextView?.text == "Type anything..."{
          
             let alert = UIAlertController(title: "Please Type Something", message: "Your entry was left blank.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .default) { action in
@@ -63,9 +63,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemEntryTextView?.delegate = self
-        itemEntryTextView?.textColor = .black
-        
+      
         // hide keyboard textFiled
         self.hideKeyboardWhenTapped()
     }
@@ -75,20 +73,5 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        textView.text = ""
-        textView.textColor = UIColor.black
-    }
-
-    // an bphim khi nhan return
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if (text == "\n") {
-            textView.resignFirstResponder()
-            return false
-        }
-        return true
-    }
-
-   
 }
 
