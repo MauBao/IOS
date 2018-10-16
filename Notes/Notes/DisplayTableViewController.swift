@@ -35,7 +35,8 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         fetchData()
-        //        self.tableView.tableFooterView = UIView()
+        // xoa dong gạch duoi tableView trong
+        self.tableView.tableFooterView = UIView()
     }
     
     // khi call sẽ grap dlieu
@@ -43,7 +44,8 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
         
         do {
             items = try context.fetch(Item.fetchRequest())
-            filteredData = items
+            // fix thư tu mang reversed()
+            filteredData = items.reversed()
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

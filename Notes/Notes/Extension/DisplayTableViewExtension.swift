@@ -31,13 +31,15 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomNoteTableViewCell", for: indexPath) as? CustomNoteTableViewCell
         
-        let date = filteredData.reversed()[indexPath.row].date
-        let time = filteredData.reversed()[indexPath.row].time
+        let date = filteredData[indexPath.row].date
+        let time = filteredData[indexPath.row].time
         
         // reversed() dat bai moi them len top
-        cell?.lblNotes.text = "Note: " + filteredData.reversed()[indexPath.row].nameDescristion!
-        cell?.lblNameNote.text = "Name: " +  filteredData.reversed()[indexPath.row].name!
-        cell?.lblMoneyNote.text = "Money: " + filteredData.reversed()[indexPath.row].money!
+        //        cell?.lblNotes.text = "Note: " + filteredData.reversed()[indexPath.row].nameDescristion!
+
+        cell?.lblNotes.text = "Note: " + filteredData[indexPath.row].nameDescristion!
+        cell?.lblNameNote.text = "Name: " +  filteredData[indexPath.row].name!
+        cell?.lblMoneyNote.text = "Money: " + filteredData[indexPath.row].money!
         if let date = date, let time = time {
             let timeStamp = "Added on \(date) at \(time)"
             cell?.lblDateCreateNote.text = timeStamp

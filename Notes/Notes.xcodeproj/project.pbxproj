@@ -10,6 +10,7 @@
 		0EB94C6B7A87C6610EAE2205 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95E0F6F1080A2C81F989187 /* Pods_Notes.framework */; };
 		68509BA6217087CC00953684 /* CustomNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68509BA4217087CC00953684 /* CustomNoteTableViewCell.swift */; };
 		68509BA7217087CC00953684 /* CustomNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68509BA5217087CC00953684 /* CustomNoteTableViewCell.xib */; };
+		68514FCD2175D150006CE723 /* TextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68514FCC2175D150006CE723 /* TextViewPlaceholder.swift */; };
 		68A6B4EC217047EE00CE1EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */; };
 		68A6B4F1217047EE00CE1EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A6B4EF217047EE00CE1EC2 /* Main.storyboard */; };
 		68A6B4F4217047EF00CE1EC2 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68A6B4F2217047EF00CE1EC2 /* Notes.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 		51DCEB4DD053BE6972542D52 /* Pods_NotesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68509BA4217087CC00953684 /* CustomNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNoteTableViewCell.swift; sourceTree = "<group>"; };
 		68509BA5217087CC00953684 /* CustomNoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNoteTableViewCell.xib; sourceTree = "<group>"; };
+		68514FCC2175D150006CE723 /* TextViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewPlaceholder.swift; sourceTree = "<group>"; };
 		68A6B4E8217047EE00CE1EC2 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A6B4F0217047EE00CE1EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				68AFAADD217480B700ACE0A8 /* DisplayTableViewExtension.swift */,
 				68AFAADF2174812A00ACE0A8 /* DisplaySearchExtension.swift */,
 				68AFAAE12174A4A200ACE0A8 /* HideKeyboard.swift */,
+				68514FCC2175D150006CE723 /* TextViewPlaceholder.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				68AFAAE22174A4A200ACE0A8 /* HideKeyboard.swift in Sources */,
 				68AFAADA2174806C00ACE0A8 /* Utility.swift in Sources */,
 				68A6B5232170521800CE1EC2 /* DisplayTableViewController.swift in Sources */,
+				68514FCD2175D150006CE723 /* TextViewPlaceholder.swift in Sources */,
 				68AFAADE217480B700ACE0A8 /* DisplayTableViewExtension.swift in Sources */,
 				68A6B51D2170488000CE1EC2 /* NotesViewController.swift in Sources */,
 				68509BA6217087CC00953684 /* CustomNoteTableViewCell.swift in Sources */,

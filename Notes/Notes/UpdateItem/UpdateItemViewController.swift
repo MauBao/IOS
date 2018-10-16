@@ -23,25 +23,33 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
             let newEntryNameDesc = itemEntryNameDescUpdate.text else  {
                 return
         }
+     
+        let dialogMessage = UIAlertController(title: "Message", message: "dl da thay doi ban co muon update", preferredStyle: .alert)
         
-        item.name = newEntryName
-        item.money = newEntryMoney
-        item.nameDescristion = newEntryNameDesc
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        // Create OK button with action handler
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            //Save
+            self.item.name = newEntryName
+            self.item.money = newEntryMoney
+            self.item.nameDescristion = newEntryNameDesc
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+//            self.dismiss(animated: true, completion: nil)
+//            self.updateViewController?.navigationController?.popViewController(animated: true)
+        })
         
-//        if ((itemEntryNameDescUpdate?.text!.isEmpty)! || (itemEntryMoneyUpdate?.text!.isEmpty)! || (itemEntryTextNameUpdate?.text!.isEmpty)!) {
-//            let alert = UIAlertController(title: "Please Type Something", message: "Your entry was left blank.", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "Okay", style: .default) { action in
-//
-//            })
-//            self.present(self, animated: true, completion: nil)
-//        }
-//        else {
-//            dismiss(animated: true, completion: nil)
-//        }
+        // Create Cancel button with action handlder
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+        }
+        
+        //Add OK and Cancel button to dialog message
+        dialogMessage.addAction(ok)
+        dialogMessage.addAction(cancel)
+        
+        // Present dialog message to user
+        self.present(dialogMessage, animated: true, completion: nil)
         
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
