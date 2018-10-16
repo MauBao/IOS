@@ -10,6 +10,18 @@ import UIKit
 
 extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let updateItemView = UpdateItemViewController()
+        updateItemView.commonInit(filteredData[indexPath.row].name!, textMoney: filteredData[indexPath.row].money! , textNameDesc: filteredData[indexPath.row].nameDescristion!)
+        
+        selectedIndex = indexPath.row
+        updateItemView.item = filteredData[selectedIndex!]
+        
+        self.navigationController?.pushViewController(updateItemView, animated: true)
+        self.tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return filteredData.count
@@ -32,16 +44,7 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         
         return cell!
     }
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        selectedIndex = indexPath.row
-//
-//        performSegue(withIdentifier: "UpdateVC", sender: self)
-//
-//        tableView.deselectRow(at: indexPath, animated: true)
-//    }
-    
+
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
             // delete item at indexPath
@@ -63,7 +66,6 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
             let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
             self.present(activityViewController, animated: true, completion: nil)
-            
         }
         
         delete.backgroundColor = UIColor(red: 0/255, green: 177/255, blue: 106/255, alpha: 1.0)
@@ -71,12 +73,4 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         
         return [delete,share]
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "UpdateVC" {
-//            let updateVC = segue.destination as! UpdateItemViewController
-//            updateVC.item = filteredData[selectedIndex!]
-//        }
-//    }
-    
 }
