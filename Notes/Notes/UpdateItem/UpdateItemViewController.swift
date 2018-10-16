@@ -22,8 +22,9 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
             let newEntryMoney = itemEntryMoneyUpdate.text,
             let newEntryNameDesc = itemEntryNameDescUpdate.text else  {
                 return
+
         }
-     
+        
         let dialogMessage = UIAlertController(title: "Message", message: "dl da thay doi ban co muon update", preferredStyle: .alert)
         
         // Create OK button with action handler
@@ -33,8 +34,7 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
             self.item.money = newEntryMoney
             self.item.nameDescristion = newEntryNameDesc
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
-//            self.dismiss(animated: true, completion: nil)
-//            self.updateViewController?.navigationController?.popViewController(animated: true)
+            self.navigationController?.popViewController(animated: true)
         })
         
         // Create Cancel button with action handlder
