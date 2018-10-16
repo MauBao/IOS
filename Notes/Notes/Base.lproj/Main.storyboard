@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,19 +34,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="I96-z3-KlT">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="compose" id="bse-Aa-5d7">
-                                <color key="tintColor" red="0.0" green="0.76470588235294112" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="zV9-Oy-wA5" kind="presentation" id="ZTy-be-MDp"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="        " id="DpO-9V-zBK"/>
-                            <barButtonItem title="          " id="Siw-GO-IHB"/>
-                            <barButtonItem title="Notes" id="eD4-zE-qSo">
-                                <color key="tintColor" red="0.33725490200000002" green="0.81960784310000001" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" title="Notes" id="eD4-zE-qSo">
+                            <color key="tintColor" red="0.33725490200000002" green="0.81960784310000001" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="bse-Aa-5d7">
+                            <color key="tintColor" red="0.0" green="0.76470588235294112" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="zV9-Oy-wA5" kind="presentation" id="ZTy-be-MDp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="6z1-wm-ycq" id="IKg-rT-sPV"/>
