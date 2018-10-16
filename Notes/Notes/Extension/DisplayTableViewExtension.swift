@@ -34,6 +34,7 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         let date = filteredData.reversed()[indexPath.row].date
         let time = filteredData.reversed()[indexPath.row].time
         
+        // reversed() dat bai moi them len top
         cell?.lblNotes.text = "Note: " + filteredData.reversed()[indexPath.row].nameDescristion!
         cell?.lblNameNote.text = "Name: " +  filteredData.reversed()[indexPath.row].name!
         cell?.lblMoneyNote.text = "Money: " + filteredData.reversed()[indexPath.row].money!

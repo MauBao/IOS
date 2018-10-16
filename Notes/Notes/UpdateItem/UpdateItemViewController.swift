@@ -18,14 +18,28 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var itemEntryTextNameUpdate: UITextField!
     @IBAction func updateAction(_ sender: Any) {
         
-        guard let newEntry = itemEntryTextNameUpdate.text else  {
-            return
+        guard let newEntryName = itemEntryTextNameUpdate.text,
+            let newEntryMoney = itemEntryMoneyUpdate.text,
+            let newEntryNameDesc = itemEntryNameDescUpdate.text else  {
+                return
         }
         
-        item.name = newEntry
+        item.name = newEntryName
+        item.money = newEntryMoney
+        item.nameDescristion = newEntryNameDesc
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
-    self.updateViewController?.navigationController?.popViewController(animated: true)
-//        dismiss(animated: true, completion: nil)
+        
+//        if ((itemEntryNameDescUpdate?.text!.isEmpty)! || (itemEntryMoneyUpdate?.text!.isEmpty)! || (itemEntryTextNameUpdate?.text!.isEmpty)!) {
+//            let alert = UIAlertController(title: "Please Type Something", message: "Your entry was left blank.", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Okay", style: .default) { action in
+//
+//            })
+//            self.present(self, animated: true, completion: nil)
+//        }
+//        else {
+//            dismiss(animated: true, completion: nil)
+//        }
+        
     }
     
     override func viewDidLoad() {
