@@ -24,6 +24,12 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var leadingConstrantSide: NSLayoutConstraint!
     @IBOutlet weak var leadingContrantTableViewNote: NSLayoutConstraint!
     
+    @IBAction func expenseNote(_ sender: Any) {
+        let expenseNote = ExpenseViewController()
+        
+        self.navigationController?.pushViewController(expenseNote, animated: true)
+    }
+    
     @IBAction func changePass(_ sender: Any) {
         let changePass = ChangePassViewController()
         

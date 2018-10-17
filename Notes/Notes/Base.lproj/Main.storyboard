@@ -32,13 +32,13 @@
                                             <constraint firstAttribute="width" secondItem="T22-Ak-umK" secondAttribute="height" multiplier="1:1" id="t5M-J4-eST"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXV-7o-TLn">
-                                        <rect key="frame" x="0.0" y="152" width="150" height="40"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXV-7o-TLn" userLabel="New Notes">
+                                        <rect key="frame" x="2" y="152" width="146" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="SUh-ke-wP4"/>
+                                            <constraint firstAttribute="height" constant="40" id="21i-cZ-tP9"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="    New Notes" image="new-notesymbol">
                                             <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -46,13 +46,27 @@
                                             <segue destination="zV9-Oy-wA5" kind="showDetail" id="4R2-3m-19M"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng4-Rm-jbt">
+                                        <rect key="frame" x="2" y="194" width="146" height="40"/>
+                                        <color key="backgroundColor" red="0.99568451739999997" green="0.97473093850000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="y8L-3Z-hhd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="    Expense" image="expensive">
+                                            <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="expenseNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Obm-eT-Mae"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcL-qL-dEK">
-                                        <rect key="frame" x="0.0" y="194" width="150" height="40"/>
+                                        <rect key="frame" x="2" y="236" width="146" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="xlK-hN-Fib"/>
+                                            <constraint firstAttribute="height" constant="40" id="z85-mP-KbF"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="    Change Pass" image="lock">
                                             <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -61,12 +75,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sQ-dO-Yok">
-                                        <rect key="frame" x="0.0" y="236" width="150" height="40"/>
+                                        <rect key="frame" x="2" y="278" width="146" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="0v5-Or-grH"/>
+                                            <constraint firstAttribute="height" constant="40" id="w49-ea-jqs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="    Settings" image="settings">
                                             <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -75,12 +89,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMO-fH-wiE">
-                                        <rect key="frame" x="0.0" y="278" width="150" height="40"/>
+                                        <rect key="frame" x="2" y="320" width="146" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="mQr-s2-NCK"/>
+                                            <constraint firstAttribute="height" constant="40" id="SS4-07-muT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="    Logout" image="logout">
                                             <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -91,21 +105,24 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.7686274509803922" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="4sQ-dO-Yok" secondAttribute="trailing" id="0Q6-n8-93t"/>
-                                    <constraint firstItem="WMO-fH-wiE" firstAttribute="top" secondItem="4sQ-dO-Yok" secondAttribute="bottom" constant="2" id="4jw-io-SWV"/>
-                                    <constraint firstItem="4sQ-dO-Yok" firstAttribute="top" secondItem="CcL-qL-dEK" secondAttribute="bottom" constant="2" id="8nF-lF-iOV"/>
-                                    <constraint firstAttribute="trailing" secondItem="WMO-fH-wiE" secondAttribute="trailing" id="8uk-yV-xpY"/>
-                                    <constraint firstAttribute="trailing" secondItem="MXV-7o-TLn" secondAttribute="trailing" id="DKp-CT-5kH"/>
-                                    <constraint firstItem="MXV-7o-TLn" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="OCP-YU-H1U"/>
+                                    <constraint firstItem="Ng4-Rm-jbt" firstAttribute="top" secondItem="MXV-7o-TLn" secondAttribute="bottom" constant="2" id="29a-HB-JIs"/>
+                                    <constraint firstItem="MXV-7o-TLn" firstAttribute="top" secondItem="T22-Ak-umK" secondAttribute="bottom" constant="2" id="38o-Cr-SrK"/>
+                                    <constraint firstAttribute="trailing" secondItem="4sQ-dO-Yok" secondAttribute="trailing" constant="2" id="5hN-VA-vXR"/>
+                                    <constraint firstItem="WMO-fH-wiE" firstAttribute="top" secondItem="4sQ-dO-Yok" secondAttribute="bottom" constant="2" id="FT0-1q-uzi"/>
+                                    <constraint firstItem="CcL-qL-dEK" firstAttribute="top" secondItem="Ng4-Rm-jbt" secondAttribute="bottom" constant="2" id="NAV-eA-AUW"/>
+                                    <constraint firstItem="4sQ-dO-Yok" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" constant="2" id="PcO-HF-UGP"/>
                                     <constraint firstItem="T22-Ak-umK" firstAttribute="top" secondItem="65a-ZT-zdr" secondAttribute="top" id="T4D-fg-PTT"/>
+                                    <constraint firstItem="WMO-fH-wiE" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" constant="2" id="WKL-vd-O3q"/>
                                     <constraint firstAttribute="trailing" secondItem="T22-Ak-umK" secondAttribute="trailing" id="Yc1-Lf-klU"/>
-                                    <constraint firstItem="MXV-7o-TLn" firstAttribute="top" secondItem="T22-Ak-umK" secondAttribute="bottom" constant="2" id="bij-Yn-Lkm"/>
-                                    <constraint firstItem="WMO-fH-wiE" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="hED-26-rYl"/>
+                                    <constraint firstItem="4sQ-dO-Yok" firstAttribute="top" secondItem="CcL-qL-dEK" secondAttribute="bottom" constant="2" id="Ype-qu-uO6"/>
+                                    <constraint firstAttribute="trailing" secondItem="WMO-fH-wiE" secondAttribute="trailing" constant="2" id="Z4W-pW-u36"/>
+                                    <constraint firstAttribute="trailing" secondItem="MXV-7o-TLn" secondAttribute="trailing" constant="2" id="cex-g4-wzX"/>
+                                    <constraint firstItem="Ng4-Rm-jbt" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" constant="2" id="eKm-Ov-UzQ"/>
+                                    <constraint firstItem="CcL-qL-dEK" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" constant="2" id="gwB-81-djq"/>
                                     <constraint firstItem="T22-Ak-umK" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="i73-lC-1hG"/>
-                                    <constraint firstItem="CcL-qL-dEK" firstAttribute="top" secondItem="MXV-7o-TLn" secondAttribute="bottom" constant="2" id="jit-pV-Jsc"/>
-                                    <constraint firstAttribute="trailing" secondItem="CcL-qL-dEK" secondAttribute="trailing" id="sCb-XP-ztF"/>
-                                    <constraint firstItem="4sQ-dO-Yok" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="t1M-3u-7le"/>
-                                    <constraint firstItem="CcL-qL-dEK" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="tWe-a1-LxU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ng4-Rm-jbt" secondAttribute="trailing" constant="2" id="mRP-vD-Iai"/>
+                                    <constraint firstItem="MXV-7o-TLn" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" constant="2" id="shr-XM-jMz"/>
+                                    <constraint firstAttribute="trailing" secondItem="CcL-qL-dEK" secondAttribute="trailing" constant="2" id="yLg-xZ-tAw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -317,6 +334,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="expensive" width="32" height="32"/>
         <image name="hinh12" width="872" height="1634"/>
         <image name="iconUser" width="200" height="200"/>
         <image name="lock" width="32" height="32"/>
