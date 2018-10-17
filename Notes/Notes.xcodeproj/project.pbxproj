@@ -11,6 +11,8 @@
 		68509BA6217087CC00953684 /* CustomNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68509BA4217087CC00953684 /* CustomNoteTableViewCell.swift */; };
 		68509BA7217087CC00953684 /* CustomNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68509BA5217087CC00953684 /* CustomNoteTableViewCell.xib */; };
 		68514FCD2175D150006CE723 /* TextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68514FCC2175D150006CE723 /* TextViewPlaceholder.swift */; };
+		6896C4A221772C1B005F16C2 /* SettingsNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896C4A021772C1B005F16C2 /* SettingsNoteViewController.swift */; };
+		6896C4A321772C1B005F16C2 /* SettingsNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6896C4A121772C1B005F16C2 /* SettingsNoteViewController.xib */; };
 		68A6B4EC217047EE00CE1EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */; };
 		68A6B4F1217047EE00CE1EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A6B4EF217047EE00CE1EC2 /* Main.storyboard */; };
 		68A6B4F4217047EF00CE1EC2 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68A6B4F2217047EF00CE1EC2 /* Notes.xcdatamodeld */; };
@@ -57,6 +59,8 @@
 		68509BA4217087CC00953684 /* CustomNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNoteTableViewCell.swift; sourceTree = "<group>"; };
 		68509BA5217087CC00953684 /* CustomNoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNoteTableViewCell.xib; sourceTree = "<group>"; };
 		68514FCC2175D150006CE723 /* TextViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewPlaceholder.swift; sourceTree = "<group>"; };
+		6896C4A021772C1B005F16C2 /* SettingsNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNoteViewController.swift; sourceTree = "<group>"; };
+		6896C4A121772C1B005F16C2 /* SettingsNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsNoteViewController.xib; sourceTree = "<group>"; };
 		68A6B4E8217047EE00CE1EC2 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A6B4F0217047EE00CE1EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,8 +147,18 @@
 				68A6B5222170521800CE1EC2 /* DisplayTableViewController.swift */,
 				68AFAAD621747EDB00ACE0A8 /* CustomNoteTableCell */,
 				68AFAAD121747E4A00ACE0A8 /* UpdateItem */,
+				6896C4A421772C22005F16C2 /* SettingsNote */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6896C4A421772C22005F16C2 /* SettingsNote */ = {
+			isa = PBXGroup;
+			children = (
+				6896C4A021772C1B005F16C2 /* SettingsNoteViewController.swift */,
+				6896C4A121772C1B005F16C2 /* SettingsNoteViewController.xib */,
+			);
+			path = SettingsNote;
 			sourceTree = "<group>";
 		};
 		68A6B4DF217047EE00CE1EC2 = {
@@ -352,6 +366,7 @@
 				68509BA7217087CC00953684 /* CustomNoteTableViewCell.xib in Resources */,
 				68AFAAD421747EBE00ACE0A8 /* UpdateItemViewController.xib in Resources */,
 				68A6B4F9217047F300CE1EC2 /* LaunchScreen.storyboard in Resources */,
+				6896C4A321772C1B005F16C2 /* SettingsNoteViewController.xib in Resources */,
 				68A6B4F6217047F300CE1EC2 /* Assets.xcassets in Resources */,
 				68A6B4F1217047EE00CE1EC2 /* Main.storyboard in Resources */,
 			);
@@ -463,6 +478,7 @@
 				68A6B51D2170488000CE1EC2 /* NotesViewController.swift in Sources */,
 				68509BA6217087CC00953684 /* CustomNoteTableViewCell.swift in Sources */,
 				68A6B4F4217047EF00CE1EC2 /* Notes.xcdatamodeld in Sources */,
+				6896C4A221772C1B005F16C2 /* SettingsNoteViewController.swift in Sources */,
 				68AFAAE02174812A00ACE0A8 /* DisplaySearchExtension.swift in Sources */,
 				68AFAAD521747EBE00ACE0A8 /* UpdateItemViewController.swift in Sources */,
 				68A6B4EC217047EE00CE1EC2 /* AppDelegate.swift in Sources */,

@@ -6,8 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,24 +23,84 @@
                                 <rect key="frame" x="0.0" y="0.0" width="525" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65a-ZT-zdr">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="667"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65a-ZT-zdr">
+                                <rect key="frame" x="-150" y="60" width="150" height="607"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbS-Lh-VEm">
-                                        <rect key="frame" x="54" y="121" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconUser" translatesAutoresizingMaskIntoConstraints="NO" id="T22-Ak-umK">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="T22-Ak-umK" secondAttribute="height" multiplier="1:1" id="t5M-J4-eST"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXV-7o-TLn">
+                                        <rect key="frame" x="0.0" y="152" width="150" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SUh-ke-wP4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="    New Notes" image="new-notesymbol">
+                                            <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcL-qL-dEK">
+                                        <rect key="frame" x="0.0" y="194" width="150" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="xlK-hN-Fib"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="    Change Pass" image="lock">
+                                            <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sQ-dO-Yok">
+                                        <rect key="frame" x="0.0" y="236" width="150" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0v5-Or-grH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="    Settings" image="settings">
+                                            <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMO-fH-wiE">
+                                        <rect key="frame" x="0.0" y="278" width="150" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mQr-s2-NCK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="    Logout" image="logout">
+                                            <color key="titleColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.7686274509803922" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4sQ-dO-Yok" secondAttribute="trailing" id="0Q6-n8-93t"/>
+                                    <constraint firstItem="WMO-fH-wiE" firstAttribute="top" secondItem="4sQ-dO-Yok" secondAttribute="bottom" constant="2" id="4jw-io-SWV"/>
+                                    <constraint firstItem="4sQ-dO-Yok" firstAttribute="top" secondItem="CcL-qL-dEK" secondAttribute="bottom" constant="2" id="8nF-lF-iOV"/>
+                                    <constraint firstAttribute="trailing" secondItem="WMO-fH-wiE" secondAttribute="trailing" id="8uk-yV-xpY"/>
+                                    <constraint firstAttribute="trailing" secondItem="MXV-7o-TLn" secondAttribute="trailing" id="DKp-CT-5kH"/>
+                                    <constraint firstItem="MXV-7o-TLn" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="OCP-YU-H1U"/>
+                                    <constraint firstItem="T22-Ak-umK" firstAttribute="top" secondItem="65a-ZT-zdr" secondAttribute="top" id="T4D-fg-PTT"/>
+                                    <constraint firstAttribute="trailing" secondItem="T22-Ak-umK" secondAttribute="trailing" id="Yc1-Lf-klU"/>
+                                    <constraint firstItem="MXV-7o-TLn" firstAttribute="top" secondItem="T22-Ak-umK" secondAttribute="bottom" constant="2" id="bij-Yn-Lkm"/>
+                                    <constraint firstItem="WMO-fH-wiE" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="hED-26-rYl"/>
+                                    <constraint firstItem="T22-Ak-umK" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="i73-lC-1hG"/>
+                                    <constraint firstItem="CcL-qL-dEK" firstAttribute="top" secondItem="MXV-7o-TLn" secondAttribute="bottom" constant="2" id="jit-pV-Jsc"/>
+                                    <constraint firstAttribute="trailing" secondItem="CcL-qL-dEK" secondAttribute="trailing" id="sCb-XP-ztF"/>
+                                    <constraint firstItem="4sQ-dO-Yok" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="t1M-3u-7le"/>
+                                    <constraint firstItem="CcL-qL-dEK" firstAttribute="leading" secondItem="65a-ZT-zdr" secondAttribute="leading" id="tWe-a1-LxU"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="65a-ZT-zdr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-150" id="BqX-xa-GKM"/>
-                            <constraint firstItem="65a-ZT-zdr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DSR-tL-8cC"/>
+                            <constraint firstItem="65a-ZT-zdr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="DSR-tL-8cC"/>
                             <constraint firstItem="65a-ZT-zdr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2:5" id="HoC-UO-Ehe"/>
                             <constraint firstAttribute="trailing" secondItem="6z1-wm-ycq" secondAttribute="trailing" id="I8P-mR-DJc"/>
                             <constraint firstAttribute="bottom" secondItem="6z1-wm-ycq" secondAttribute="bottom" id="PIG-cJ-uwi"/>
@@ -193,19 +253,19 @@
                             <constraint firstAttribute="trailing" secondItem="JzD-li-B35" secondAttribute="trailing" constant="30" id="Pqb-Gz-etv"/>
                             <constraint firstItem="kSq-Hl-Twc" firstAttribute="top" secondItem="L6i-Kq-D0i" secondAttribute="bottom" constant="20" id="PtO-Dw-W8v"/>
                             <constraint firstAttribute="trailing" secondItem="bhW-SP-TTL" secondAttribute="trailing" id="Rtg-o2-7ES"/>
-                            <constraint firstItem="iiS-qr-FVT" firstAttribute="trailing" secondItem="XlK-iB-oML" secondAttribute="trailing" constant="30" id="SSJ-bG-bh9"/>
+                            <constraint firstAttribute="trailing" secondItem="XlK-iB-oML" secondAttribute="trailing" constant="30" id="SSJ-bG-bh9"/>
                             <constraint firstItem="JzD-li-B35" firstAttribute="top" secondItem="xmA-u1-mMA" secondAttribute="bottom" constant="10" id="U4Y-gQ-Cu4"/>
                             <constraint firstAttribute="trailing" secondItem="kUP-NN-D5l" secondAttribute="trailing" constant="30" id="Uf4-Mx-V1s"/>
                             <constraint firstAttribute="trailing" secondItem="pqy-rv-YTo" secondAttribute="trailing" constant="30" id="XFM-aq-lv6"/>
                             <constraint firstItem="LI9-E6-UhL" firstAttribute="leading" secondItem="oJ5-Ca-lpR" secondAttribute="leading" constant="30" id="ZkC-if-3dS"/>
                             <constraint firstItem="pqy-rv-YTo" firstAttribute="top" secondItem="JzD-li-B35" secondAttribute="bottom" constant="20" id="czz-So-nxe"/>
                             <constraint firstItem="L6i-Kq-D0i" firstAttribute="leading" secondItem="oJ5-Ca-lpR" secondAttribute="leading" constant="30" id="dcP-xU-XmC"/>
-                            <constraint firstItem="6dg-CR-xo8" firstAttribute="leading" secondItem="iiS-qr-FVT" secondAttribute="leading" constant="20" id="eXx-W5-zdH"/>
+                            <constraint firstItem="6dg-CR-xo8" firstAttribute="leading" secondItem="oJ5-Ca-lpR" secondAttribute="leading" constant="20" id="eXx-W5-zdH"/>
                             <constraint firstAttribute="trailing" secondItem="LI9-E6-UhL" secondAttribute="trailing" constant="30" id="gU4-QP-Bh3"/>
                             <constraint firstItem="xmA-u1-mMA" firstAttribute="top" secondItem="6dg-CR-xo8" secondAttribute="bottom" constant="20" id="hA9-bE-8oZ"/>
                             <constraint firstItem="L6i-Kq-D0i" firstAttribute="top" secondItem="XlK-iB-oML" secondAttribute="bottom" constant="20" id="i4Z-mi-nvI"/>
                             <constraint firstItem="XlK-iB-oML" firstAttribute="top" secondItem="kUP-NN-D5l" secondAttribute="bottom" constant="10" id="k80-Tw-LWm"/>
-                            <constraint firstItem="XlK-iB-oML" firstAttribute="leading" secondItem="iiS-qr-FVT" secondAttribute="leading" constant="30" id="kof-9D-5zQ"/>
+                            <constraint firstItem="XlK-iB-oML" firstAttribute="leading" secondItem="oJ5-Ca-lpR" secondAttribute="leading" constant="30" id="kof-9D-5zQ"/>
                             <constraint firstAttribute="bottom" secondItem="aHE-R2-Eb4" secondAttribute="bottom" id="mca-jA-t9t"/>
                             <constraint firstItem="bhW-SP-TTL" firstAttribute="leading" secondItem="oJ5-Ca-lpR" secondAttribute="leading" id="nbJ-Vw-MzS"/>
                             <constraint firstItem="JzD-li-B35" firstAttribute="leading" secondItem="oJ5-Ca-lpR" secondAttribute="leading" constant="30" id="q2x-0J-eKb"/>
@@ -213,7 +273,6 @@
                             <constraint firstItem="LI9-E6-UhL" firstAttribute="top" secondItem="pqy-rv-YTo" secondAttribute="bottom" constant="10" id="sjd-wL-yq1"/>
                             <constraint firstItem="aHE-R2-Eb4" firstAttribute="top" secondItem="oJ5-Ca-lpR" secondAttribute="top" id="uq7-Jb-zJY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iiS-qr-FVT"/>
                     </view>
                     <navigationItem key="navigationItem" id="46i-Sp-mcX"/>
                     <connections>
@@ -247,5 +306,10 @@
     </scenes>
     <resources>
         <image name="hinh12" width="872" height="1634"/>
+        <image name="iconUser" width="200" height="200"/>
+        <image name="lock" width="32" height="32"/>
+        <image name="logout" width="32" height="32"/>
+        <image name="new-notesymbol" width="32" height="32"/>
+        <image name="settings" width="32" height="32"/>
     </resources>
 </document>
