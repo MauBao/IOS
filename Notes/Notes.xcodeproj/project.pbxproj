@@ -136,6 +136,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6896C49F2176F1B3005F16C2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				68A6B51C2170488000CE1EC2 /* NotesViewController.swift */,
+				68A6B5222170521800CE1EC2 /* DisplayTableViewController.swift */,
+				68AFAAD621747EDB00ACE0A8 /* CustomNoteTableCell */,
+				68AFAAD121747E4A00ACE0A8 /* UpdateItem */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		68A6B4DF217047EE00CE1EC2 = {
 			isa = PBXGroup;
 			children = (
@@ -163,16 +174,13 @@
 			children = (
 				68AFAAD821747F7600ACE0A8 /* Common */,
 				68AFAAD721747F6B00ACE0A8 /* Extension */,
-				68AFAAD121747E4A00ACE0A8 /* UpdateItem */,
+				6896C49F2176F1B3005F16C2 /* ViewController */,
 				68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */,
 				68A6B4EF217047EE00CE1EC2 /* Main.storyboard */,
 				68A6B4F5217047F300CE1EC2 /* Assets.xcassets */,
 				68A6B4F7217047F300CE1EC2 /* LaunchScreen.storyboard */,
 				68A6B4FA217047F300CE1EC2 /* Info.plist */,
 				68A6B4F2217047EF00CE1EC2 /* Notes.xcdatamodeld */,
-				68A6B51C2170488000CE1EC2 /* NotesViewController.swift */,
-				68A6B5222170521800CE1EC2 /* DisplayTableViewController.swift */,
-				68AFAAD621747EDB00ACE0A8 /* CustomNoteTableCell */,
 			);
 			path = Notes;
 			sourceTree = "<group>";

@@ -29,7 +29,7 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomNoteTableViewCell", for: indexPath) as? CustomNoteTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CustomNoteTableViewCell, for: indexPath) as? CustomNoteTableViewCell
         
         let date = filteredData[indexPath.row].date
         let time = filteredData[indexPath.row].time
@@ -37,9 +37,9 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         // reversed() dat bai moi them len top
         //        cell?.lblNotes.text = "Note: " + filteredData.reversed()[indexPath.row].nameDescristion!
 
-        cell?.lblNotes.text = "Note: " + filteredData[indexPath.row].nameDescristion!
-        cell?.lblNameNote.text = "Name: " +  filteredData[indexPath.row].name!
-        cell?.lblMoneyNote.text = "Money: " + filteredData[indexPath.row].money!
+        cell?.lblNotes.text = Constants.lblNote + filteredData[indexPath.row].nameDescristion!
+        cell?.lblNameNote.text = Constants.lblNameNote +  filteredData[indexPath.row].name!
+        cell?.lblMoneyNote.text = Constants.lblMoneyNote + filteredData[indexPath.row].money!
         if let date = date, let time = time {
             let timeStamp = "Added on \(date) at \(time)"
             cell?.lblDateCreateNote.text = timeStamp
@@ -49,7 +49,7 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
     }
 
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let delete = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
+        let delete = UITableViewRowAction(style: .default, title: Constants.itemDelete) { (action, indexPath) in
             // delete item at indexPath
             let item = self.filteredData[indexPath.row]
             self.context.delete(item)
@@ -60,11 +60,11 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
             
         }
         
-        let share = UITableViewRowAction(style: .default, title: "Share") { (action, indexPath) in
+        let share = UITableViewRowAction(style: .default, title: Constants.itemShare) { (action, indexPath) in
             // share item at indexPath
-            let name = "\(self.filteredData[indexPath.row].name ?? "") "
-            let nameDescristion = "\(self.filteredData[indexPath.row].nameDescristion ?? "") "
-            let money = "\(self.filteredData[indexPath.row].money ?? "") "
+            let name = "\(self.filteredData[indexPath.row].name ?? Constants.nill) "
+            let nameDescristion = "\(self.filteredData[indexPath.row].nameDescristion ?? Constants.nill) "
+            let money = "\(self.filteredData[indexPath.row].money ?? Constants.nill) "
             let textShare = [name, money, nameDescristion]
             let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view

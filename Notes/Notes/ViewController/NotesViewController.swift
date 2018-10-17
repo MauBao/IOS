@@ -18,10 +18,10 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func saveItem(_ sender: Any) {
-        if ((itemEntryTextView?.text!.isEmpty)! || (itemEntryMoney?.text!.isEmpty)! || (itemEntryName?.text!.isEmpty)!) || itemEntryTextView?.text == "Type anything..."{
+        if ((itemEntryTextView?.text!.isEmpty)! || (itemEntryMoney?.text!.isEmpty)! || (itemEntryName?.text!.isEmpty)!) || itemEntryTextView?.text == Constants.planceitemEntryTextView {
          
-            let alert = UIAlertController(title: "Please Type Something", message: "Your entry was left blank.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .default) { action in
+            let alert = UIAlertController(title: Constants.titleMessageAddEmty, message: Constants.messageAddEmty, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: Constants.okayMessageAddEmty, style: .default) { action in
                 
             })
             
@@ -30,7 +30,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
             // lay ngay thang
             let date = Date()
             let formatter = DateFormatter()
-            formatter.dateFormat = "MM/dd/YY"
+            formatter.dateFormat = Constants.dateFormatAdd
             let currentDate = formatter.string(from: date)
             
             let timeFormatter = DateFormatter()
@@ -63,7 +63,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.title = "New Notes"
+//      self.title = "New Notes"
         // hide keyboard textFiled
         self.hideKeyboardWhenTapped()
     }

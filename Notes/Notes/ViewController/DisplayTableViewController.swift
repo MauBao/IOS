@@ -17,9 +17,24 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
     var items: [Item] = []
     var selectedIndex: Int!
     var filteredData: [Item] = []
+    var menuNote = false
     
 //    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var leadingConstrantSide: NSLayoutConstraint!
+    @IBOutlet weak var leadingContrantTableViewNote: NSLayoutConstraint!
+    
+    @IBAction func itemMenuNote(_ sender: Any) {
+        if (menuNote) {
+            leadingConstrantSide.constant = -150
+            leadingContrantTableViewNote.constant = 0
+        } else {
+            leadingConstrantSide.constant = 0
+            leadingContrantTableViewNote.constant = 150
+            UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+        }
+        menuNote = !menuNote
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +42,10 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        tableView.register(UINib.init(nibName: "CustomNoteTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomNoteTableViewCell")
+        //constraint
+        leadingContrantTableViewNote.constant = 0
+        
+        tableView.register(UINib.init(nibName: Constants.CustomNoteTableViewCell, bundle: nil), forCellReuseIdentifier: Constants.CustomNoteTableViewCell)
         createSearchBar()
         //an bphim
         hideKeyboardWhenTappedAround()
@@ -50,7 +68,7 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
                 self.tableView.reloadData()
             }
         } catch {
-            print("Couldn't Fetch Data")
+            Utility.showAlert(message: Constants.grapDataFail, context: self)
         }
     }
 }

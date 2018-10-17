@@ -30,7 +30,7 @@ extension DisplayTableViewController {
         
         let searchBar = UISearchBar()
         searchBar.showsCancelButton = false
-        searchBar.placeholder = "Search"
+        searchBar.placeholder = Constants.planceSearch
         searchBar.delegate = self
         
         self.navigationItem.titleView = searchBar

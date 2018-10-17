@@ -25,10 +25,10 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
 
         }
         
-        let dialogMessage = UIAlertController(title: "Message", message: "dl da thay doi ban co muon update", preferredStyle: .alert)
+        let dialogMessage = UIAlertController(title: Constants.titleShowAlertMessage, message: Constants.messageChangeUpdate, preferredStyle: .alert)
         
         // Create OK button with action handler
-        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+        let ok = UIAlertAction(title: Constants.okButtonAlert, style: .default, handler: { (action) -> Void in
             //Save
             self.item.name = newEntryName
             self.item.money = newEntryMoney
@@ -38,7 +38,7 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
         })
         
         // Create Cancel button with action handlder
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+        let cancel = UIAlertAction(title: Constants.cancelButtonAlert, style: .cancel) { (action) -> Void in
         }
         
         //Add OK and Cancel button to dialog message
@@ -52,8 +52,7 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Update"
+        self.title = Constants.titleViewUpdateItem
         
         itemEntryTextNameUpdate.text = item?.name
         itemEntryMoneyUpdate.text = item?.money
