@@ -24,6 +24,22 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var leadingConstrantSide: NSLayoutConstraint!
     @IBOutlet weak var leadingContrantTableViewNote: NSLayoutConstraint!
     
+    @IBAction func changePass(_ sender: Any) {
+        let changePass = ChangePassViewController()
+        
+        self.navigationController?.pushViewController(changePass, animated: true)
+    }
+    
+    @IBAction func settingNote(_ sender: Any) {
+        let settingNote = SettingsNoteViewController()
+        
+        self.navigationController?.pushViewController(settingNote, animated: true)
+    }
+    
+    @IBAction func logoutNote(_ sender: Any) {
+        
+    }
+    
     @IBAction func itemMenuNote(_ sender: Any) {
         if (menuNote) {
             leadingConstrantSide.constant = -150
