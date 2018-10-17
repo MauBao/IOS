@@ -17,6 +17,7 @@
 		6896C4A8217730B6005F16C2 /* ChangePassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6896C4A6217730B6005F16C2 /* ChangePassViewController.xib */; };
 		6896C4AC21773573005F16C2 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896C4AA21773573005F16C2 /* ExpenseViewController.swift */; };
 		6896C4AD21773573005F16C2 /* ExpenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6896C4AB21773573005F16C2 /* ExpenseViewController.xib */; };
+		6896C4B02177497C005F16C2 /* FormatNumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896C4AF2177497C005F16C2 /* FormatNumberText.swift */; };
 		68A6B4EC217047EE00CE1EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */; };
 		68A6B4F1217047EE00CE1EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A6B4EF217047EE00CE1EC2 /* Main.storyboard */; };
 		68A6B4F4217047EF00CE1EC2 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68A6B4F2217047EF00CE1EC2 /* Notes.xcdatamodeld */; };
@@ -69,6 +70,7 @@
 		6896C4A6217730B6005F16C2 /* ChangePassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassViewController.xib; sourceTree = "<group>"; };
 		6896C4AA21773573005F16C2 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		6896C4AB21773573005F16C2 /* ExpenseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpenseViewController.xib; sourceTree = "<group>"; };
+		6896C4AF2177497C005F16C2 /* FormatNumberText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatNumberText.swift; sourceTree = "<group>"; };
 		68A6B4E8217047EE00CE1EC2 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A6B4EB217047EE00CE1EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A6B4F0217047EE00CE1EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				68AFAADF2174812A00ACE0A8 /* DisplaySearchExtension.swift */,
 				68AFAAE12174A4A200ACE0A8 /* HideKeyboard.swift */,
 				68514FCC2175D150006CE723 /* TextViewPlaceholder.swift */,
+				6896C4AF2177497C005F16C2 /* FormatNumberText.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				68514FCD2175D150006CE723 /* TextViewPlaceholder.swift in Sources */,
 				68AFAADE217480B700ACE0A8 /* DisplayTableViewExtension.swift in Sources */,
 				68A6B51D2170488000CE1EC2 /* NotesViewController.swift in Sources */,
+				6896C4B02177497C005F16C2 /* FormatNumberText.swift in Sources */,
 				68509BA6217087CC00953684 /* CustomNoteTableViewCell.swift in Sources */,
 				68A6B4F4217047EF00CE1EC2 /* Notes.xcdatamodeld in Sources */,
 				6896C4A221772C1B005F16C2 /* SettingsNoteViewController.swift in Sources */,
