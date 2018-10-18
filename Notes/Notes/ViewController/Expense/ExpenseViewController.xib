@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpenseViewController" customModule="Notes" customModuleProvider="target">
             <connections>
+                <outlet property="tableViewExpense" destination="b21-YD-6ni" id="otd-BP-Wpo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,19 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b21-YD-6ni">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b21-YD-6ni" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2L8-Q2-IsM"/>
+                <constraint firstAttribute="trailing" secondItem="b21-YD-6ni" secondAttribute="trailing" id="qY0-Wg-Abb"/>
+                <constraint firstItem="b21-YD-6ni" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tCd-pz-DOO"/>
+                <constraint firstAttribute="bottom" secondItem="b21-YD-6ni" secondAttribute="bottom" id="tJ5-N4-xRN"/>
+            </constraints>
         </view>
     </objects>
 </document>

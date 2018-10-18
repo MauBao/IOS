@@ -18,7 +18,63 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.71873608501623054" blue="0.23624197746343856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hinh" translatesAutoresizingMaskIntoConstraints="NO" id="6tM-1K-edr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2QE-VI-4vb">
+                    <rect key="frame" x="30" y="100" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-Yu-nP5">
+                    <rect key="frame" x="30" y="170" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ez-ei-a4B">
+                    <rect key="frame" x="30" y="240" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGe-4t-bBq">
+                    <rect key="frame" x="30" y="370" width="315" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.76862745099999996" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="srp-GI-EgO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="Change Password"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2QE-VI-4vb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="4T0-ZS-vSV"/>
+                <constraint firstItem="dGe-4t-bBq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="8Vu-qM-Hay"/>
+                <constraint firstItem="2QE-VI-4vb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="9RK-jo-iUN"/>
+                <constraint firstItem="1Ez-ei-a4B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="D5Y-vi-im6"/>
+                <constraint firstItem="NDa-Yu-nP5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="IMo-gJ-2M7"/>
+                <constraint firstItem="dGe-4t-bBq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PVB-Rf-ois"/>
+                <constraint firstAttribute="bottom" secondItem="6tM-1K-edr" secondAttribute="bottom" id="SFp-NR-Y0H"/>
+                <constraint firstAttribute="trailing" secondItem="dGe-4t-bBq" secondAttribute="trailing" constant="30" id="eaf-aZ-4Mc"/>
+                <constraint firstItem="1Ez-ei-a4B" firstAttribute="top" secondItem="NDa-Yu-nP5" secondAttribute="bottom" constant="40" id="edq-AF-WNa"/>
+                <constraint firstItem="6tM-1K-edr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="naM-pY-Hcr"/>
+                <constraint firstItem="NDa-Yu-nP5" firstAttribute="top" secondItem="2QE-VI-4vb" secondAttribute="bottom" constant="40" id="oPe-L8-K1z"/>
+                <constraint firstItem="6tM-1K-edr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oip-Bc-2OJ"/>
+                <constraint firstItem="NDa-Yu-nP5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="paD-BH-FKt"/>
+                <constraint firstItem="dGe-4t-bBq" firstAttribute="top" secondItem="1Ez-ei-a4B" secondAttribute="bottom" constant="100" id="q5K-2I-Wae"/>
+                <constraint firstItem="2QE-VI-4vb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qWm-TD-c0M"/>
+                <constraint firstAttribute="trailing" secondItem="1Ez-ei-a4B" secondAttribute="trailing" constant="30" id="tYM-nQ-LZG"/>
+                <constraint firstAttribute="trailing" secondItem="NDa-Yu-nP5" secondAttribute="trailing" constant="30" id="vVs-v5-OKW"/>
+                <constraint firstAttribute="trailing" secondItem="2QE-VI-4vb" secondAttribute="trailing" constant="30" id="x18-XE-yBv"/>
+                <constraint firstItem="1Ez-ei-a4B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yhO-zh-N5s"/>
+                <constraint firstAttribute="trailing" secondItem="6tM-1K-edr" secondAttribute="trailing" id="zxL-9u-vEW"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="hinh" width="768" height="1663"/>
+    </resources>
 </document>

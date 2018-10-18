@@ -45,6 +45,11 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
             cell?.lblDateCreateNote.text = timeStamp
         }
         
+        // clock date
+        //let note = noteNotification[indexPath.row]
+       // cell?.textLabel?.text = note.nameClock
+        //cell?.detailTextLabel?.text = "Date " + dateFormatter.string(from: note.timeClock as Date)
+        
         return cell!
     }
 
