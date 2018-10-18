@@ -18,6 +18,7 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
     var selectedIndex: Int!
     var filteredData: [Item] = []
     
+    // notification clock
     var noteNotification = [NoteNotificationsClock]()
     let dateFormatter = DateFormatter()
     let locale = NSLocale.current
@@ -99,8 +100,10 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
             items = try context.fetch(Item.fetchRequest())
             // fix thư tu mang reversed()
             filteredData = items.reversed()
+            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+               
             }
         } catch {
             Utility.showAlert(message: Constants.grapDataFail, context: self)

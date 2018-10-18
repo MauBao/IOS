@@ -10,7 +10,12 @@ import UIKit
 
 class ExpenseViewController: UIViewController {
 
+    var delegate: ExpenseTableViewProtocol?
+    
+    var moneyExpense: [Item] = []
+    
     @IBOutlet weak var tableViewExpense: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,14 +26,34 @@ class ExpenseViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         tableViewExpense.register(UINib(nibName: "ExpenseTableViewCell", bundle: nil), forCellReuseIdentifier: "ExpenseTableViewCell")
+        getSingle()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // lay date
+//    func getCurrenDateTime() {
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "EEEE , MM,dd,yyyy HH:mm a"
+//        let str = formatter.string(from: Date())
+//
+//    }
+    // tra date
+    func getSingle() {
+        let date = Date()
+        let calender = Calendar.current
+        let year = calender.component(.year, from: date)
+        let month = calender.component(.month, from: date)
+        let day = calender.component(.day, from: date)
+        
+        print("\(year):\(month):\(day)")
+        
+    }
 }
+
 extension ExpenseViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -37,10 +62,13 @@ extension ExpenseViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableViewExpense.dequeueReusableCell(withIdentifier: "ExpenseTableViewCell", for: indexPath) as! ExpenseTableViewCell
-
-
-        cell.lblMonthMoney.text = "Hello"
-        cell.lblMoney.text = "451241121"
+        
+//        var calorieTotal: Int {
+//            return moneyExpense[indexPath].reduce(0) { $0 + $1 }
+//        }
+        
+//        cell.lblMoney.text = String(calorieTotal)
+        cell.lblMonthMoney.text = "451241121"
         
         return cell
     }

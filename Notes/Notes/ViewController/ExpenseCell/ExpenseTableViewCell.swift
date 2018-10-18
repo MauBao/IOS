@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol ExpenseTableViewProtocol {
+    
+}
+
 class ExpenseTableViewCell: UITableViewCell {
 
+    var delegateExpense: ExpenseTableViewProtocol?
+    
     @IBOutlet weak var lblMonthMoney: UILabel!
     @IBOutlet weak var lblMoney: UILabel!
     
