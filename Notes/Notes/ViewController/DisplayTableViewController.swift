@@ -17,6 +17,11 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
     var items: [Item] = []
     var selectedIndex: Int!
     var filteredData: [Item] = []
+    
+    var noteNotification = [NoteNotificationsClock]()
+    let dateFormatter = DateFormatter()
+    let locale = NSLocale.current
+    
     var menuNote = false
     
 //    @IBOutlet weak var searchBar: UISearchBar!
@@ -68,7 +73,15 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
         leadingContrantTableViewNote.constant = 0
         
         tableView.register(UINib.init(nibName: Constants.CustomNoteTableViewCell, bundle: nil), forCellReuseIdentifier: Constants.CustomNoteTableViewCell)
+        
+        // set more dateFormatter settings
+        dateFormatter.locale = locale
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .short
+        
+        // search bar
         createSearchBar()
+        
         //an bphim
         hideKeyboardWhenTappedAround()
     }
