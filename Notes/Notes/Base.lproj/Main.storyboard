@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,6 +23,17 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6z1-wm-ycq">
                                 <rect key="frame" x="0.0" y="0.0" width="525" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Boh-pn-cr7">
+                                        <rect key="frame" x="0.0" y="28" width="525" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Boh-pn-cr7" id="Aj8-Qu-nao">
+                                            <rect key="frame" x="0.0" y="0.0" width="525" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65a-ZT-zdr">
                                 <rect key="frame" x="-150" y="60" width="150" height="607"/>
@@ -302,6 +314,7 @@
                             <constraint firstItem="LI9-E6-UhL" firstAttribute="top" secondItem="pqy-rv-YTo" secondAttribute="bottom" constant="10" id="sjd-wL-yq1"/>
                             <constraint firstItem="aHE-R2-Eb4" firstAttribute="top" secondItem="oJ5-Ca-lpR" secondAttribute="top" id="uq7-Jb-zJY"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="c1f-Op-XgV"/>
                     </view>
                     <navigationItem key="navigationItem" id="46i-Sp-mcX"/>
                     <connections>
