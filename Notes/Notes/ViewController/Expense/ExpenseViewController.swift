@@ -63,11 +63,8 @@ extension ExpenseViewController: UITableViewDelegate, UITableViewDataSource {
 
         let cell = tableViewExpense.dequeueReusableCell(withIdentifier: "ExpenseTableViewCell", for: indexPath) as! ExpenseTableViewCell
         
-//        var calorieTotal: Int {
-//            return moneyExpense[indexPath].reduce(0) { $0 + $1 }
-//        }
         
-//        cell.lblMoney.text = String(calorieTotal)
+        cell.lblMoney.text = String(calorieTotal)
         cell.lblMonthMoney.text = "451241121"
         
         return cell

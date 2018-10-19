@@ -103,7 +103,11 @@ class DisplayTableViewController: UIViewController, UISearchBarDelegate {
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-               
+                
+//                var calorieTotal: Int {
+//                    return items.money.reduce(0) { $0 + $1 }
+//                }
+                
             }
         } catch {
             Utility.showAlert(message: Constants.grapDataFail, context: self)

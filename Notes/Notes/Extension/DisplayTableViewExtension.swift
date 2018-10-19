@@ -43,6 +43,11 @@ extension DisplayTableViewController: UITableViewDataSource, UITableViewDelegate
         if let date = date, let time = time {
             let timeStamp = "Added on \(date) at \(time)"
             cell?.lblDateCreateNote.text = timeStamp
+            
+//        var calorieTotal: Int {
+//            return filteredData[indexPath.row].reduce(0) { $0 + $1 }
+//        }
+//
         }
         
         // clock date
