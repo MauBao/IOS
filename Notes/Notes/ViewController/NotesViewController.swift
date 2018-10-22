@@ -18,7 +18,9 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func saveItem(_ sender: Any) {
-        if ((itemEntryTextView?.text!.isEmpty)! || (itemEntryMoney?.text!.isEmpty)! || (itemEntryName?.text!.isEmpty)!) || itemEntryTextView?.text == Constants.planceitemEntryTextView {
+//        if ((itemEntryTextView?.text!.isEmpty)! || (itemEntryMoney?.text!.isEmpty)! || (itemEntryName?.text!.isEmpty)!) || itemEntryTextView?.text == Constants.planceitemEntryTextView {
+//
+        if ((itemEntryMoney?.text!.isEmpty)! || (itemEntryName?.text!.isEmpty)!) || itemEntryTextView?.text == Constants.planceitemEntryTextView {
          
             let alert = UIAlertController(title: Constants.titleMessageAddEmty, message: Constants.messageAddEmty, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: Constants.okayMessageAddEmty, style: .default) { action in
