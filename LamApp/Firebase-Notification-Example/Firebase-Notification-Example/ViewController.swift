@@ -12,7 +12,8 @@ import UserNotifications
 
 class ViewController: UIViewController {
 
-    let ref = Database.database().reference(withPath: "grocery-items")
+    var ref: DatabaseReference!
+    ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
