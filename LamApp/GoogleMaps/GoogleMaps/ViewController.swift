@@ -1,19 +1,15 @@
 //
 //  ViewController.swift
-//  Firebase-Notification-Example
+//  GoogleMaps
 //
-//  Created by Bao Ngo Mau on 10/22/18.
-//  Copyright © 2018 Bao Ngo Mau. All rights reserved.
+//  Created by Ngo Mau Bao on 10/24/18.
+//  Copyright © 2018 Ngo Mau Bao. All rights reserved.
 //
 
 import UIKit
-import Firebase
-import UserNotifications
 
 class ViewController: UIViewController {
 
-    let ref = Database.database().reference(withPath: "grocery-items")
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

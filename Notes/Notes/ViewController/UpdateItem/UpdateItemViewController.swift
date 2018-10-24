@@ -13,6 +13,7 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
     var item: Item!
     var updateViewController: UpdateItemViewController?
     
+//    @IBOutlet weak var textNoteDescription: NSLayoutConstraint!
     @IBOutlet weak var itemEntryNameDescUpdate: UITextField!
     @IBOutlet weak var itemEntryMoneyUpdate: UITextField!
     @IBOutlet weak var itemEntryTextNameUpdate: UITextField!
@@ -61,8 +62,24 @@ class UpdateItemViewController: UIViewController, UITextViewDelegate {
         // Do any additional setup after loading the view.
         hideKeyboardWhenTapped()
         
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
 
+//    // hieu ung di chuyen texfield khi hien bp
+//    @objc func keyboardWillShow(notification: NSNotification) {
+//
+//        if let info = notification.userInfo {
+//            let rect:CGRect = info["UIKeyboardFrameEndUserInfoKey"] as! CGRect
+//
+//            self.view.layoutIfNeeded()
+//            UIView.animate(withDuration: 0.25, animations: {
+//
+//                self.view.layoutIfNeeded()
+//                self.textNoteDescription.constraints = rect.height + 20
+//                })
+//        }
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
