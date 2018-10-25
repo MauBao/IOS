@@ -1,0 +1,6 @@
+framework module Pods_FirebaseCocialLogin {
+  umbrella header "Pods-FirebaseCocialLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

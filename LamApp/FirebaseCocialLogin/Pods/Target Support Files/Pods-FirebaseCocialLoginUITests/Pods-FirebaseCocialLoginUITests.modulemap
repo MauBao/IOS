@@ -1,0 +1,6 @@
+framework module Pods_FirebaseCocialLoginUITests {
+  umbrella header "Pods-FirebaseCocialLoginUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
