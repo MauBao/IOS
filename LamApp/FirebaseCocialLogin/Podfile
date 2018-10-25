@@ -10,6 +10,7 @@ target 'FirebaseCocialLogin' do
 	pod 'FBSDKShareKit'
 	pod 'FBSDKLoginKit'
 	pod 'Firebase/Core'
+  pod 'Firebase/FIRAuth'
 
   # Pods for FirebaseCocialLogin
 
