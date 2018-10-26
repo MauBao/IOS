@@ -10,10 +10,11 @@ import UIKit
 
 class SettingsNoteViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        textView.placeholder = "Start typing here"
+        self.hideKeyboardWhenTapped()
     }
 
     override func didReceiveMemoryWarning() {

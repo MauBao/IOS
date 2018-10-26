@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsNoteViewController" customModule="Notes" customModuleProvider="target">
             <connections>
+                <outlet property="textView" destination="DpG-VV-1rb" id="zc6-cq-hTb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-VV-1rb">
+                    <rect key="frame" x="20" y="258.5" width="335" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="qjp-gH-Vlf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
             <color key="backgroundColor" red="0.56251988264123332" green="0.48497350083961988" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DpG-VV-1rb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5CY-y8-G7p"/>
+                <constraint firstAttribute="trailing" secondItem="DpG-VV-1rb" secondAttribute="trailing" constant="20" id="Xvl-uv-5PX"/>
+                <constraint firstItem="DpG-VV-1rb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YkR-g8-6Y9"/>
+                <constraint firstItem="DpG-VV-1rb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="iDW-i3-eWa"/>
+            </constraints>
         </view>
     </objects>
 </document>
