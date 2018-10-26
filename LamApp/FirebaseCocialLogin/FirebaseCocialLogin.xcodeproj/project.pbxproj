@@ -15,7 +15,7 @@
 		68A4251921816C8A007053A9 /* FirebaseCocialLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A4251821816C8A007053A9 /* FirebaseCocialLoginTests.swift */; };
 		68A4252421816C8A007053A9 /* FirebaseCocialLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A4252321816C8A007053A9 /* FirebaseCocialLoginUITests.swift */; };
 		68A425332181AD78007053A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68A425322181AD78007053A9 /* GoogleService-Info.plist */; };
-		CADC99B2BB9510492A0D59D5 /* Pods_FirebaseCocialLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786BE7DC2ED9DBC0FF5814C6 /* Pods_FirebaseCocialLogin.framework */; };
+		CADC99B2BB9510492A0D59D5 /* Pods_FirebaseCocialLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786BE7DC2ED9DBC0FF5814C6 /* Pods_FirebaseCocialLogin.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D357A608D9EC0EAB8BED5CFA /* Pods_FirebaseCocialLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBAF6F96BE734351C14D394 /* Pods_FirebaseCocialLoginTests.framework */; };
 		EB0CA2EDB3FFE81A7836404A /* Pods_FirebaseCocialLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C807E48290D6A860D345A59 /* Pods_FirebaseCocialLoginUITests.framework */; };
 /* End PBXBuildFile section */
