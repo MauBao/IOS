@@ -60,6 +60,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func showEmaiAddress() {
+        
+        
         FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).start { (connection, result, err) in
             if err != nil {
                 print("Failed to start graph request:", err!)
