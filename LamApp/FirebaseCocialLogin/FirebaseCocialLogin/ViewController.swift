@@ -39,7 +39,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     @objc func handleCustomFBLogin() {
         FBSDKLoginManager().logIn(withReadPermissions: ["email", "public_profile"], from: self) { (result, err) in
             if err != nil {
-                print("Custo, FB Login failed: ", err as Any)
+                print("Custom, FB Login failed: ", err as Any)
                 return
             }
             self.showEmaiAddress()
@@ -60,19 +60,19 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func showEmaiAddress() {
-        let accessToken = FBSDKAccessToken.current()
-        guard let acessTokenString = accessToken?.tokenString else {
-            return
-        }
-        let credentitals = FIRFacebookAuthProvider.credential(withAcessToken: acessTokenString)
-        FIRAuth.auth()?.singIn(with: credentitals, completion: {(user, error) in
-            if error != nil {
-                print("Something went wrong with our FB User: ", error ?? "" )
-                return
-            }
-            
-            print("Successfully logged in wwiht our user: ", user ?? "")
-        })
+//        let accessToken = FBSDKAccessToken.current()
+//        guard let acessTokenString = accessToken?.tokenString else {
+//            return
+//        }
+//        let credentitals = FIRFacebookAuthProvider.credential(withAcessToken: acessTokenString)
+//        FIRAuth.auth()?.singIn(with: credentitals, completion: {(user, error) in
+//            if error != nil {
+//                print("Something went wrong with our FB User: ", error ?? "" )
+//                return
+//            }
+//
+//            print("Successfully logged in wwiht our user: ", user ?? "")
+//        })
         
         FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).start { (connection, result, err) in
             if err != nil {
