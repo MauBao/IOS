@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68CCD1602186B77300BC87E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CCD15F2186B77300BC87E6 /* AppDelegate.swift */; };
+		68CCD1622186B77300BC87E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CCD1612186B77300BC87E6 /* ViewController.swift */; };
+		68CCD1652186B77300BC87E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CCD1632186B77300BC87E6 /* Main.storyboard */; };
+		68CCD1672186B77900BC87E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CCD1662186B77900BC87E6 /* Assets.xcassets */; };
+		68CCD16A2186B77900BC87E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CCD1682186B77900BC87E6 /* LaunchScreen.storyboard */; };
+		68CCD1732186B85800BC87E6 /* ExtensionUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CCD1722186B85800BC87E6 /* ExtensionUILabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68CCD15C2186B77300BC87E6 /* CustomLabel Effects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomLabel Effects.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CCD15F2186B77300BC87E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68CCD1612186B77300BC87E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68CCD1642186B77300BC87E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68CCD1662186B77900BC87E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68CCD1692186B77900BC87E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68CCD16B2186B77900BC87E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68CCD1722186B85800BC87E6 /* ExtensionUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUILabel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68CCD1592186B77300BC87E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68CCD1532186B77300BC87E6 = {
+			isa = PBXGroup;
+			children = (
+				68CCD1712186B81F00BC87E6 /* Extension */,
+				68CCD15E2186B77300BC87E6 /* CustomLabel Effects */,
+				68CCD15D2186B77300BC87E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68CCD15D2186B77300BC87E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68CCD15C2186B77300BC87E6 /* CustomLabel Effects.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68CCD15E2186B77300BC87E6 /* CustomLabel Effects */ = {
+			isa = PBXGroup;
+			children = (
+				68CCD15F2186B77300BC87E6 /* AppDelegate.swift */,
+				68CCD1612186B77300BC87E6 /* ViewController.swift */,
+				68CCD1632186B77300BC87E6 /* Main.storyboard */,
+				68CCD1662186B77900BC87E6 /* Assets.xcassets */,
+				68CCD1682186B77900BC87E6 /* LaunchScreen.storyboard */,
+				68CCD16B2186B77900BC87E6 /* Info.plist */,
+			);
+			path = "CustomLabel Effects";
+			sourceTree = "<group>";
+		};
+		68CCD1712186B81F00BC87E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				68CCD1722186B85800BC87E6 /* ExtensionUILabel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68CCD15B2186B77300BC87E6 /* CustomLabel Effects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CCD16E2186B77900BC87E6 /* Build configuration list for PBXNativeTarget "CustomLabel Effects" */;
+			buildPhases = (
+				68CCD1582186B77300BC87E6 /* Sources */,
+				68CCD1592186B77300BC87E6 /* Frameworks */,
+				68CCD15A2186B77300BC87E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CustomLabel Effects";
+			productName = "CustomLabel Effects";
+			productReference = 68CCD15C2186B77300BC87E6 /* CustomLabel Effects.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68CCD1542186B77300BC87E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ngo Mau Bao";
+				TargetAttributes = {
+					68CCD15B2186B77300BC87E6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 68CCD1572186B77300BC87E6 /* Build configuration list for PBXProject "CustomLabel Effects" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68CCD1532186B77300BC87E6;
+			productRefGroup = 68CCD15D2186B77300BC87E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68CCD15B2186B77300BC87E6 /* CustomLabel Effects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68CCD15A2186B77300BC87E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CCD16A2186B77900BC87E6 /* LaunchScreen.storyboard in Resources */,
+				68CCD1672186B77900BC87E6 /* Assets.xcassets in Resources */,
+				68CCD1652186B77300BC87E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68CCD1582186B77300BC87E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CCD1622186B77300BC87E6 /* ViewController.swift in Sources */,
+				68CCD1602186B77300BC87E6 /* AppDelegate.swift in Sources */,
+				68CCD1732186B85800BC87E6 /* ExtensionUILabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68CCD1632186B77300BC87E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CCD1642186B77300BC87E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68CCD1682186B77900BC87E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CCD1692186B77900BC87E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68CCD16C2186B77900BC87E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68CCD16D2186B77900BC87E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68CCD16F2186B77900BC87E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9922T7LJA2;
+				INFOPLIST_FILE = "CustomLabel Effects/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BaoNgo.com.CustomLabel-Effects";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68CCD1702186B77900BC87E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9922T7LJA2;
+				INFOPLIST_FILE = "CustomLabel Effects/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BaoNgo.com.CustomLabel-Effects";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68CCD1572186B77300BC87E6 /* Build configuration list for PBXProject "CustomLabel Effects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CCD16C2186B77900BC87E6 /* Debug */,
+				68CCD16D2186B77900BC87E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CCD16E2186B77900BC87E6 /* Build configuration list for PBXNativeTarget "CustomLabel Effects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CCD16F2186B77900BC87E6 /* Debug */,
+				68CCD1702186B77900BC87E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68CCD1542186B77300BC87E6 /* Project object */;
+}
