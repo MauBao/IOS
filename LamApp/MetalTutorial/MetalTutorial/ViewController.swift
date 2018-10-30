@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         device = MTLCreateSystemDefaultDevice()
         
-        metalLayer = metalLayer()          // 1
+        metalLayer = CAMetalLayer()          // 1
         metalLayer.device = device           // 2
         metalLayer.pixelFormat = .bgra8Unorm // 3
         metalLayer.framebufferOnly = true    // 4
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         renderEncoder?.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 3, instanceCount: 1)
         renderEncoder?.endEncoding()
         
-        commandBuffer.present(drawable)
+        commandBuffer?.present(drawable)
         commandBuffer?.commit()
     }
     
