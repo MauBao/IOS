@@ -13,6 +13,9 @@
 		6834D1E92179C9BA0026770D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6834D1E82179C9BA0026770D /* Assets.xcassets */; };
 		6834D1EC2179C9BA0026770D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6834D1EA2179C9BA0026770D /* LaunchScreen.storyboard */; };
 		6834D1F42179D18C0026770D /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6834D1F32179D18C0026770D /* Shaders.metal */; };
+		68AC3FAE21895A0200503312 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC3FAD21895A0200503312 /* Vertex.swift */; };
+		68AC3FB021895AB500503312 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC3FAF21895AB500503312 /* Node.swift */; };
+		68CA562E21895C700071EE0B /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA562D21895C700071EE0B /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		6834D1EB2179C9BA0026770D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6834D1ED2179C9BA0026770D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6834D1F32179D18C0026770D /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		68AC3FAD21895A0200503312 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		68AC3FAF21895AB500503312 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		68CA562D21895C700071EE0B /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				6834D1E82179C9BA0026770D /* Assets.xcassets */,
 				6834D1EA2179C9BA0026770D /* LaunchScreen.storyboard */,
 				6834D1ED2179C9BA0026770D /* Info.plist */,
+				68AC3FAD21895A0200503312 /* Vertex.swift */,
+				68AC3FAF21895AB500503312 /* Node.swift */,
+				68CA562D21895C700071EE0B /* Triangle.swift */,
 			);
 			path = MetalTutorial;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AC3FB021895AB500503312 /* Node.swift in Sources */,
 				6834D1F42179D18C0026770D /* Shaders.metal in Sources */,
+				68AC3FAE21895A0200503312 /* Vertex.swift in Sources */,
+				68CA562E21895C700071EE0B /* Triangle.swift in Sources */,
 				6834D1E42179C9B80026770D /* ViewController.swift in Sources */,
 				6834D1E22179C9B80026770D /* AppDelegate.swift in Sources */,
 			);
