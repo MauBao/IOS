@@ -25,9 +25,15 @@ class ViewController: UIViewController {
         
          tableview.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
         
-        fetchImage { (images) in
-            self.images = images
-            self.tableview.reloadData()
+        // async
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.fetchImage { (images) in
+                self.images = images
+                
+                DispatchQueue.main.async {
+                    self.tableview.reloadData()
+                }
+            }
         }
     }
 
@@ -40,7 +46,6 @@ class ViewController: UIViewController {
 //        let urlSring = "http://www.splashbase.co/api/v1/images/latest"
         let urlSring = "https://jsonplaceholder.typicode.com/photos"
         guard let url = URL(string: urlSring) else { return }
-        print(url)
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             let decoder = JSONDecoder()
             do {
