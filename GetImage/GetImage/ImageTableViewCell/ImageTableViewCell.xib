@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="ImageTableViewCell" customModule="GetImage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hinh" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-Ib-hmk">
+                        <rect key="frame" x="10" y="10" width="70" height="64.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0R-Hr-LVg">
+                        <rect key="frame" x="100" y="10" width="220" height="64.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AEk-Ib-hmk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8eP-nS-nG1"/>
+                    <constraint firstItem="AEk-Ib-hmk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="F59-8w-4dR"/>
+                    <constraint firstItem="g0R-Hr-LVg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ISR-0j-Bmk"/>
+                    <constraint firstAttribute="bottom" secondItem="g0R-Hr-LVg" secondAttribute="bottom" constant="10" id="Sbq-Tu-cDg"/>
+                    <constraint firstAttribute="bottom" secondItem="AEk-Ib-hmk" secondAttribute="bottom" constant="10" id="Vm9-ZT-vE1"/>
+                    <constraint firstAttribute="trailing" secondItem="g0R-Hr-LVg" secondAttribute="trailing" constant="10" id="epu-LT-YcB"/>
+                    <constraint firstAttribute="trailing" secondItem="AEk-Ib-hmk" secondAttribute="trailing" constant="250" id="fo7-bS-X1o"/>
+                    <constraint firstItem="g0R-Hr-LVg" firstAttribute="leading" secondItem="AEk-Ib-hmk" secondAttribute="trailing" constant="20" id="uEW-iO-HzP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ImageCallAPI" destination="AEk-Ib-hmk" id="BVw-5S-BrR"/>
+                <outlet property="cellLabel" destination="g0R-Hr-LVg" id="C73-du-Ne8"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="31.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hinh" width="672" height="480"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_GetImage {
+  umbrella header "Pods-GetImage-umbrella.h"
+
+  export *
+  module * { export * }
+}
