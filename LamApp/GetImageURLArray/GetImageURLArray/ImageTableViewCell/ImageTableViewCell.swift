@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol ImageCellProtocol {
+    
+}
+
 class ImageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var ImageTableCell: UIImageView!
+    @IBOutlet weak var lblTableCell: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
