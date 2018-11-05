@@ -9,8 +9,4 @@
 struct ImageModel: Decodable {
 
     var thumbnailUrl: String?
-    
-    init(dictionary: [String:String]) {
-        self.thumbnailUrl = dictionary["thumbnailUrl"] ?? ""
-    }
 }

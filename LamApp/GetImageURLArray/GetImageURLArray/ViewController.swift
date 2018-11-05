@@ -11,10 +11,12 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    var presenter : ImageCellProtocol?
-    var imageList: [UIImage] = []
+    @IBOutlet weak var tableview: UITableView!
     
-    let images: [String] = ["https://splashbase.s3.amazonaws.com/newoldstock/regular/tumblr_pfme9748DA1sfie3io1_1280.jpg",
+    var presenter : ImageCellProtocol?
+    var imageList: [ImageModel] = []
+
+    var images: [String] = ["https://splashbase.s3.amazonaws.com/newoldstock/regular/tumblr_pfme9748DA1sfie3io1_1280.jpg",
                             "https://splashbase.s3.amazonaws.com/newoldstock/regular/tumblr_ph3sduP91I1sfie3io1_1280.jpg",
                             "https://splashbase.s3.amazonaws.com/newoldstock/regular/tumblr_ph3sdrq3UK1sfie3io1_1280.jpg",
                             "https://splashbase.s3.amazonaws.com/newoldstock/regular/tumblr_ph8vg6OMLo1sfie3io1_1280.jpg",
@@ -36,11 +38,35 @@ class ViewController: UIViewController {
         
         tableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
         
-        saveMedia()
+        // async
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.fetchImage { (images) in
+                self.images = images
+                
+                DispatchQueue.main.async {
+                    self.tableview.reloadData()
+                }
+            }
+        }
     }
     
-    func saveMedia() {
-       
+    func fetchImage(completion: @escaping ([ImageModel]) -> ()) {
+        for i in images {
+            let urlSring = i
+            guard let url = URL(string: urlSring) else { return }
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                let decoder = JSONDecoder()
+                do {
+                    guard let data = data else { return }
+                    let dataArray = try decoder.decode([ImageModel].self, from: data)
+                    DispatchQueue.main.async {
+                        completion(dataArray)
+                    }
+                } catch {
+                    print(error)
+                }
+                }.resume()
+        }
     }
     
     override func didReceiveMemoryWarning() {

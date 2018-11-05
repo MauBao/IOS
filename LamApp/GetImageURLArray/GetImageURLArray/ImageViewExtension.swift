@@ -11,12 +11,15 @@ import UIKit
 extension ViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return images.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath)
         
+        if let images = self.images {
+            cell.img = images[indexPath.item]
+        }
         return cell
     }
 
