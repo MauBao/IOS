@@ -69,13 +69,13 @@
 		68143C5D218FE62D00E38D13 /* GetImageURLArray */ = {
 			isa = PBXGroup;
 			children = (
-				68143C70218FE73400E38D13 /* ImageTableViewCell */,
 				68143C5E218FE62D00E38D13 /* AppDelegate.swift */,
 				68143C60218FE62D00E38D13 /* ViewController.swift */,
 				68143C62218FE62D00E38D13 /* Main.storyboard */,
 				68143C65218FE63000E38D13 /* Assets.xcassets */,
 				68143C67218FE63000E38D13 /* LaunchScreen.storyboard */,
 				68143C6A218FE63000E38D13 /* Info.plist */,
+				68143C70218FE73400E38D13 /* ImageTableViewCell */,
 				68143C75218FEA4C00E38D13 /* ImageViewExtension.swift */,
 				6839110A219020FF00BB919C /* ModelImage.swift */,
 			);

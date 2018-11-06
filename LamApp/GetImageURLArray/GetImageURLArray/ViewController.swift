@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     
     var presenter : ImageCellProtocol?
-    var imageList: [ImageModel] = []
+    var imageList: [ImageModel]?
 
     var images: [String] = ["https://splashbase.s3.amazonaws.com/newoldstock/regular/tumblr_pfme9748DA1sfie3io1_1280.jpg",
                             "https://splashbase.s3.amazonaws.com/newoldstock/regular/tumblr_ph3sduP91I1sfie3io1_1280.jpg",
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         // async
         DispatchQueue.global(qos: .userInteractive).async {
             self.fetchImage { (images) in
-                self.images = images
+                self.imageList = images
                 
                 DispatchQueue.main.async {
                     self.tableview.reloadData()
