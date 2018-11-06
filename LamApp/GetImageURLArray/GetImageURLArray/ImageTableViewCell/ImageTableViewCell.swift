@@ -13,19 +13,6 @@ protocol ImageCellProtocol {
 }
 
 class ImageTableViewCell: UITableViewCell {
-
-    var img: ImageModel? {
-        didSet {
-            guard let img = img else { return }
-            guard let thumbnailString = img.thumbnailUrl else { return }
-            
-//            cellLabel.text = img.title
-            if let thumbnailUrl = URL(string: thumbnailString) {
-                let data = try! Data(contentsOf: thumbnailUrl)
-                ImageTableCell.image = UIImage(data: data)
-            }
-        }
-    }
     
     @IBOutlet weak var ImageTableCell: UIImageView!
     @IBOutlet weak var lblTableCell: UILabel!
