@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16798D3D7092F9EF610867CD /* Pods_GetImageURLArray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9004F0801D27E2F223FE001 /* Pods_GetImageURLArray.framework */; };
+		680CFE5B2192D6640021F178 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680CFE5A2192D6640021F178 /* Loader.swift */; };
 		68143C5F218FE62D00E38D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68143C5E218FE62D00E38D13 /* AppDelegate.swift */; };
 		68143C61218FE62D00E38D13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68143C60218FE62D00E38D13 /* ViewController.swift */; };
 		68143C64218FE62D00E38D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68143C62218FE62D00E38D13 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		46A5EF878F56A0E149068E1C /* Pods-GetImageURLArray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetImageURLArray.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetImageURLArray/Pods-GetImageURLArray.release.xcconfig"; sourceTree = "<group>"; };
+		680CFE5A2192D6640021F178 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		68143C5B218FE62D00E38D13 /* GetImageURLArray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetImageURLArray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68143C5E218FE62D00E38D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68143C60218FE62D00E38D13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				68143C70218FE73400E38D13 /* ImageTableViewCell */,
 				68143C75218FEA4C00E38D13 /* ImageViewExtension.swift */,
 				6839110A219020FF00BB919C /* ModelImage.swift */,
+				680CFE5A2192D6640021F178 /* Loader.swift */,
 			);
 			path = GetImageURLArray;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				68143C73218FE74900E38D13 /* ImageTableViewCell.swift in Sources */,
 				68143C61218FE62D00E38D13 /* ViewController.swift in Sources */,
+				680CFE5B2192D6640021F178 /* Loader.swift in Sources */,
 				68143C76218FEA4C00E38D13 /* ImageViewExtension.swift in Sources */,
 				68143C5F218FE62D00E38D13 /* AppDelegate.swift in Sources */,
 				6839110B219020FF00BB919C /* ModelImage.swift in Sources */,
