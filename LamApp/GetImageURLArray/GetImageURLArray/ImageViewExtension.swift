@@ -20,18 +20,16 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
         // set up activity indicator
         activityIndicator.center = CGPoint(x: cell.ImageTableCell.bounds.size.width/2, y: cell.ImageTableCell.bounds.size.height/2)
-        activityIndicator.color = UIColor.yellow
+        activityIndicator.color = UIColor.black
         cell.ImageTableCell.addSubview(activityIndicator)
-        
+
         // async
         DispatchQueue.global(qos: .userInteractive).async {
             activityIndicator.startAnimating()
-
-            cell.ImageTableCell.image = self.imageArr[indexPath.row] as? UIImage
             
-            activityIndicator.stopAnimating()
-
-            DispatchQueue.main.async {
+            cell.ImageTableCell.image = self.imageArr[indexPath.row] as? UIImage
+           
+            DispatchQueue.main.sync {
                 cell.lblTableCell.text! = self.name[indexPath.row] as! String
             }
         }
