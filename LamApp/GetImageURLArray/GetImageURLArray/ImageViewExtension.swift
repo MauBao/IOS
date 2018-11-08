@@ -24,31 +24,31 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         cell.ImageTableCell.addSubview(activityIndicator)
 
         // async
-        DispatchQueue.global(qos: .userInteractive).async {
+        DispatchQueue.global(qos: .userInteractive).sync {
             activityIndicator.startAnimating()
-            
             cell.ImageTableCell.image = self.imageArr[indexPath.row] as? UIImage
-           
-            DispatchQueue.main.sync {
+            activityIndicator.stopAnimating()
+
+            DispatchQueue.main.async {
                 cell.lblTableCell.text! = self.name[indexPath.row] as! String
             }
         }
         return cell
     }
-    
+
 //    spinner loading cuoi cell
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let lastSectionIndex = tableView.numberOfSections - 1
-        let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
-        if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
-            // print("this is the last cell")
-            let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-            spinner.startAnimating()
-            spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView.bounds.width, height: CGFloat(44))
-            
-            self.tableView.tableFooterView = spinner
-            self.tableView.tableFooterView?.isHidden = false
-        }
+//        let lastSectionIndex = tableView.numberOfSections - 1
+//        let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
+//        if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
+//            // print("this is the last cell")
+//            let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+//            spinner.startAnimating()
+//            spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView.bounds.width, height: CGFloat(44))
+//            
+//            self.tableView.tableFooterView = spinner
+//            self.tableView.tableFooterView?.isHidden = false
+//        }
     }
 }
 
