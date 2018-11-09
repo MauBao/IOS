@@ -17,6 +17,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
         
+         //    spinner loading image cell
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
         // set up activity indicator
         activityIndicator.center = CGPoint(x: cell.ImageTableCell.bounds.size.width/2, y: cell.ImageTableCell.bounds.size.height/2)
@@ -25,8 +26,12 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
 
         // async
         DispatchQueue.global(qos: .userInteractive).sync {
+            // start spinner loading
             activityIndicator.startAnimating()
+            
             cell.ImageTableCell.image = self.imageArr[indexPath.row] as? UIImage
+            
+            // stop spinner loading
             activityIndicator.stopAnimating()
 
             DispatchQueue.main.async {
