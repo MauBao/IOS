@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHH-Fe-qUt">
+                                <rect key="frame" x="50" y="200" width="275" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TdX-Qd-tk0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-lM-lTD">
+                                <rect key="frame" x="50" y="367" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.11551650529191108" blue="0.075107151289035889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="IRC-JV-Swc"/>
+                                    <constraint firstAttribute="width" constant="120" id="lhE-iZ-oi2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtnPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rn3-5k-60e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfg-HT-kph">
+                                <rect key="frame" x="205" y="367" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.1155165053" blue="0.075107151289999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="T4O-7V-Toc"/>
+                                    <constraint firstAttribute="height" constant="120" id="leL-G0-aeD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBtnPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kai-Sb-njy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33488865157017506" green="0.50770656907588929" blue="0.8917179404145078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QHH-Fe-qUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8RU-vt-9mb"/>
+                            <constraint firstItem="QHH-Fe-qUt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="98o-UU-Mis"/>
+                            <constraint firstItem="QHH-Fe-qUt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="BUB-FV-t5i"/>
+                            <constraint firstAttribute="trailing" secondItem="QHH-Fe-qUt" secondAttribute="trailing" constant="50" id="DHw-zT-7Jz"/>
+                            <constraint firstAttribute="bottom" secondItem="TNz-lM-lTD" secondAttribute="bottom" constant="180" id="RMO-Lb-BlX"/>
+                            <constraint firstAttribute="bottom" secondItem="tfg-HT-kph" secondAttribute="bottom" constant="180" id="S0F-zj-MTC"/>
+                            <constraint firstItem="TNz-lM-lTD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Ult-Ch-iHg"/>
+                            <constraint firstAttribute="trailing" secondItem="tfg-HT-kph" secondAttribute="trailing" constant="50" id="ak9-nO-570"/>
+                            <constraint firstItem="tfg-HT-kph" firstAttribute="leading" secondItem="TNz-lM-lTD" secondAttribute="trailing" constant="35" id="nfR-d1-BWL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reserBtn" destination="TNz-lM-lTD" id="iHP-gc-62a"/>
+                        <outlet property="startBtn" destination="tfg-HT-kph" id="ufF-tc-Et0"/>
+                        <outlet property="timeLabel" destination="QHH-Fe-qUt" id="qod-PS-Szx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
