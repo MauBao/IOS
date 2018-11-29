@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ziA-B2-u1k">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUy-0n-r7I">
-                                <rect key="frame" x="20" y="308" width="335" height="50"/>
+                                <rect key="frame" x="20" y="308.5" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.41686894724029189" green="0.28515310171139197" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="exC-Bu-APE"/>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIf-hI-Zht">
-                                <rect key="frame" x="20" y="458" width="335" height="20.5"/>
+                                <rect key="frame" x="20" y="458.5" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,5 +81,245 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
+        <!--Keypad View Controller-->
+        <scene sceneID="huU-Lh-ofu">
+            <objects>
+                <viewController storyboardIdentifier="KeypadViewController" id="ziA-B2-u1k" customClass="KeypadViewController" customModule="MitelConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="POI-P5-LOQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kvp-ay-vIy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uek-Nh-zIY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradientBkgrnd" translatesAutoresizingMaskIntoConstraints="NO" id="Cwf-7g-2Ie">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMa-m1-Ute">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hJ-D3-rBk" customClass="CopyablePhonenumberLabel" customModule="MitelConnect" customModuleProvider="target">
+                                        <rect key="frame" x="62.5" y="69" width="250" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF1-rm-o51">
+                                        <rect key="frame" x="327" y="80" width="32" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Backspace"/>
+                                        <connections>
+                                            <action selector="deleteKeyPressed:" destination="ziA-B2-u1k" eventType="touchDown" id="oza-wg-Oov"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-h9-BLN">
+                                        <rect key="frame" x="313" y="60.5" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="deleteKeyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="wDY-Bz-PLe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwA-dg-aST">
+                                <rect key="frame" x="175" y="20" width="25" height="8.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="path24Down"/>
+                                <connections>
+                                    <action selector="showDashboard:" destination="ziA-B2-u1k" eventType="touchDown" id="mIY-XV-gyM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWp-kS-xyf" userLabel="Keypad" customClass="KeypadView" customModule="MitelConnect" customModuleProvider="target">
+                                <rect key="frame" x="47" y="188" width="281" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="yaM-9P-rtV">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S5-BH-kTS">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <state key="normal" image="num1"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="jFz-Yl-i8p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mV-5L-1zs">
+                                                <rect key="frame" x="75" y="0.0" width="75" height="75"/>
+                                                <state key="normal" image="num2"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="dol-Dp-9Kr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svt-ED-36Y">
+                                                <rect key="frame" x="150" y="0.0" width="75" height="75"/>
+                                                <state key="normal" image="num3"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="BjB-Pb-pp7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="W8u-Ld-0CB">
+                                        <rect key="frame" x="0.0" y="90" width="48" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9a-Dz-cxK">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Num4"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="Xa2-9R-hEB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S50-lo-DwC">
+                                                <rect key="frame" x="16" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Num5"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="tfG-mw-huC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pt-rA-hfI">
+                                                <rect key="frame" x="32" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Num6"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="idh-oA-eNa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="PYV-vk-zOn">
+                                        <rect key="frame" x="0.0" y="180" width="48" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3d-Uy-gQ4">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Num7"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="7Ya-i3-GSh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-y9-YE9">
+                                                <rect key="frame" x="16" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Num8"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="6NE-cV-q5S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaz-dn-jAS">
+                                                <rect key="frame" x="32" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Num9"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="yVy-SK-Kzw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xeh-Yq-QTp">
+                                        <rect key="frame" x="0.0" y="270" width="106" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMi-By-Iie">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                                <state key="normal" image="Star Dialpad"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="r8w-px-hOs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcK-dl-OMW">
+                                                <rect key="frame" x="74" y="0.0" width="16" height="74"/>
+                                                <state key="normal" image="Num0"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="4N5-dW-3Yn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIg-5w-hNA">
+                                                <rect key="frame" x="90" y="0.0" width="16" height="74"/>
+                                                <state key="normal" image="Pound"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="ziA-B2-u1k" eventType="touchUpInside" id="Axt-N0-lOF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="5GO-kl-uoG">
+                                        <rect key="frame" x="0.0" y="360" width="48" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-XS-KT1">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="More call options"/>
+                                                <connections>
+                                                    <action selector="callUsingAction:" destination="ziA-B2-u1k" eventType="touchUpInside" id="lKL-IJ-CSL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaB-q4-fT9">
+                                                <rect key="frame" x="16" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Call number"/>
+                                                <connections>
+                                                    <action selector="callAction:" destination="ziA-B2-u1k" eventType="touchUpInside" id="0K7-y9-P2G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh0-gk-eII">
+                                                <rect key="frame" x="32" y="0.0" width="16" height="22"/>
+                                                <state key="normal" image="Contact Dialpad"/>
+                                                <connections>
+                                                    <action selector="contactDialpadAction:" destination="ziA-B2-u1k" eventType="touchUpInside" id="3JA-5H-4Lh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RGU-SC-SUT"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="Keypad" destination="eWp-kS-xyf" id="Qef-Xb-r8P"/>
+                        <outlet property="backSpaceButton" destination="eF1-rm-o51" id="W4h-ir-eBw"/>
+                        <outlet property="backSpaceDummy" destination="xfb-h9-BLN" id="Gvc-ra-BLT"/>
+                        <outlet property="btn0" destination="FcK-dl-OMW" id="tsn-eH-588"/>
+                        <outlet property="btn1" destination="6S5-BH-kTS" id="S8a-y9-Usf"/>
+                        <outlet property="btnAsterisk" destination="cMi-By-Iie" id="NVA-rz-fTQ"/>
+                        <outlet property="btnContactDialPad" destination="Bh0-gk-eII" id="GM0-ib-Yx9"/>
+                        <outlet property="btnPound" destination="AIg-5w-hNA" id="84Q-Zx-3pg"/>
+                        <outlet property="callButton" destination="WaB-q4-fT9" id="dbV-gs-623"/>
+                        <outlet property="dialpadNumber" destination="9hJ-D3-rBk" id="0Zw-nN-H1d"/>
+                        <outlet property="lastStackView" destination="5GO-kl-uoG" id="wP6-q7-njO"/>
+                        <outlet property="moreOptionsButton" destination="0OV-XS-KT1" id="xx1-6N-3nE"/>
+                        <outlet property="numberHolder" destination="xMa-m1-Ute" id="NVD-25-XgJ"/>
+                        <outlet property="slideUp" destination="DwA-dg-aST" id="c70-7D-iHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G82-5I-ZPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4990" y="172"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Backspace" width="32" height="21"/>
+        <image name="Call number" width="16" height="16"/>
+        <image name="Contact Dialpad" width="16" height="16"/>
+        <image name="More call options" width="16" height="16"/>
+        <image name="Num0" width="16" height="16"/>
+        <image name="Num4" width="16" height="16"/>
+        <image name="Num5" width="16" height="16"/>
+        <image name="Num6" width="16" height="16"/>
+        <image name="Num7" width="16" height="16"/>
+        <image name="Num8" width="16" height="16"/>
+        <image name="Num9" width="16" height="16"/>
+        <image name="Pound" width="16" height="16"/>
+        <image name="Star Dialpad" width="74" height="74"/>
+        <image name="gradientBkgrnd" width="375" height="667"/>
+        <image name="num1" width="75" height="75"/>
+        <image name="num2" width="75" height="75"/>
+        <image name="num3" width="75" height="75"/>
+        <image name="path24Down" width="24" height="10"/>
+    </resources>
 </document>
